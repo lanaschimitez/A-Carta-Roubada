@@ -11,6 +11,10 @@ public class CaixaDeEscrita : MonoBehaviour
     void Start()
     {
         enigma = new char[] { 'a', 'b' }; //colocar para pegar em uma base de dados
+        for(int i=0; i>0 ; i++)
+        {
+
+        }
         var input = gameObject.GetComponent<InputField>();
         input.onEndEdit.AddListener(SubmitName);
 
