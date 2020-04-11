@@ -6,15 +6,19 @@ using UnityEngine.UI;
 public class CaixaDeEscrita : MonoBehaviour
 {
     public string lana = "Lana";
-    public char[] enigma; 
-    public char[] teste;
+    public char[] enigmaArray;
+    public string resultado;
+    public string enigma;
+
     void Start()
     {
-        enigma = new char[] { 'a', 'b' }; //colocar para pegar em uma base de dados
-        for(int i=0; i>0 ; i++)
+        enigmaArray = new char[] { 'a', 'b' }; //colocar para pegar em uma base de dados
+        enigma = string.Join("", enigmaArray); //transformando a array em string antes de misturar
+        for (int i=0; i>0 ; i++)
         {
-
+            //misturar as letras
         }
+        resultado = string.Join("", enigmaArray); //transformando a array em string depois de misturar
         var input = gameObject.GetComponent<InputField>();
         input.onEndEdit.AddListener(SubmitName);
 
