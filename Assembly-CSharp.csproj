@@ -63,8 +63,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Puzzle1.cs" />
-    <Compile Include="Assets\Scripts\Puzzle2.cs" />
+    <Compile Include="Assets\Scripts\Puzzle1\Puzzle1.cs" />
+    <Compile Include="Assets\Scripts\Puzzle2\CaixaDeEscrita.cs" />
+    <Compile Include="Assets\Scripts\Puzzle2\TextoEnigma.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/LanaEduardaSchimitez/Documents/GitHub/A Carta Roubada/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
