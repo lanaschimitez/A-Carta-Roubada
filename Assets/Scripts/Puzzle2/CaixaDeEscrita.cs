@@ -14,20 +14,19 @@ public class CaixaDeEscrita : MonoBehaviour
     {
         enigmaArray = new char[] { 'a', 'b' }; //colocar para pegar em uma base de dados
         enigma = string.Join("", enigmaArray); //transformando a array em string antes de misturar
+
         for (int i=0; i>0 ; i++)
         {
             //misturar as letras
         }
         resultado = string.Join("", enigmaArray); //transformando a array em string depois de misturar
-        var input = gameObject.GetComponent<InputField>();
+        var input = gameObject.GetComponent<InputField>(); //recebe o que o usuario digitar
         input.onEndEdit.AddListener(SubmitName);
 
     }
     private void SubmitName(string arg0)
     {
-        string lana = "Lana"; 
         Debug.Log(arg0);
-
-        Debug.Log("    Is str1 equal to str2?: {0}" + string.Equals(arg0, lana));
+        Debug.Log("    Is str1 equal to str2?: {0}" + string.Equals(arg0, enigma)); //verificar se o usuario acertou
     }
 }
