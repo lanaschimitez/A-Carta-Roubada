@@ -25,7 +25,7 @@ public class parede4 : MonoBehaviour
         if (other.gameObject.tag == "player")
         {
             posicao = Jogador.transform.position;
-            Jogador.transform.position = new Vector3(posicao.x+1, posicao.y, posicao.z);
+            Jogador.transform.position = new Vector3(posicao.x+2, posicao.y, posicao.z);
         }
     }
 }
