@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class desafio1 : MonoBehaviour
 {
@@ -23,17 +24,7 @@ public class desafio1 : MonoBehaviour
     {
         if (other.gameObject.tag == "player")
         {
-            Painel.gameObject.SetActive(true);
-            Jogador.transform.position = new Vector3(14.2f, 5.8f, 51.58476f);
-            Time.timeScale = 0;
-            Camera.GetComponent<rotacao>().enabled = false;
+            SceneManager.LoadScene("Puzzle 1");
         }
-    }
-
-    public void OnClickVolta()
-    {
-        Painel.gameObject.SetActive(false);
-        Time.timeScale = 1;
-        Camera.GetComponent<rotacao>().enabled = true;
     }
 }
