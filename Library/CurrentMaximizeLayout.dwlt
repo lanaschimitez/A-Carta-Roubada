@@ -21,10 +21,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 731
-  m_MinSize: {x: 677, y: 471}
-  m_MaxSize: {x: 12002, y: 14021}
+  m_MinSize: {x: 677, y: 492}
+  m_MaxSize: {x: 12002, y: 14042}
   vertical: 1
-  controlID: 7702
+  controlID: 212
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 677, y: 221}
   m_MaxSize: {x: 12002, y: 4021}
   vertical: 0
-  controlID: 7703
+  controlID: 207
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -159,8 +159,8 @@ MonoBehaviour:
     y: 0
     width: 201
     height: 460
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 5}
   m_Panes:
   - {fileID: 5}
@@ -197,7 +197,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 58e8ffff62e8ffffb0f1ffff72fbffff784c0000
+      m_ExpandedIDs: 84f9ffff72fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -285,9 +285,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -29.136305, y: 28.069317, z: 61.967396}
+    m_Target: {x: -12.794772, y: 1.5776978, z: 11.483066}
     speed: 2
-    m_Value: {x: -29.136305, y: 28.069317, z: 61.967396}
+    m_Value: {x: -12.794772, y: 1.5776978, z: 11.483066}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -333,13 +333,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.03711153, y: -0.41507432, z: 0.01694865, w: -0.90887654}
+    m_Target: {x: -0.04204621, y: 0.9198643, z: -0.102814734, w: -0.37617964}
     speed: 2
-    m_Value: {x: -0.037111387, y: -0.41507274, z: 0.016948584, w: -0.9088731}
+    m_Value: {x: -0.042046208, y: 0.9198642, z: -0.10281472, w: -0.37617958}
   m_Size:
-    m_Target: 5.2224693
+    m_Target: 41.36266
     speed: 2
-    m_Value: 5.2224693
+    m_Value: 41.36266
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -452,7 +452,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
-  m_LastInspectedObjectInstanceID: -7184
+  m_LastInspectedObjectInstanceID: 14792
   m_LastVerticalScrollValue: 0
 --- !u!114 &11
 MonoBehaviour:
@@ -519,34 +519,34 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Moveis/Room/prefabs
+    - Assets/Scripts/Puzzle1
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Moveis/Room/prefabs
+  - Assets/Scripts/Puzzle1
   m_LastFoldersGridSize: 16
   m_LastProjectPath: E:\Marcelo\Documentos\GitHub\A-Carta-Roubada
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: b0380000
-    m_LastClickedID: 14512
-    m_ExpandedIDs: 000000001c3800001e38000020380000223800002438000026380000283800002a3800002c3800002e3800008e38000092380000a8380000
+    m_SelectedIDs: 60370000
+    m_LastClickedID: 14176
+    m_ExpandedIDs: 00000000e0360000e2360000e4360000e6360000e8360000ea360000ec360000ee360000f0360000f23600005e370000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Puzzle2
+      m_OriginalName: Puzzle2
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 14054
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 11}
     m_SearchString: 
@@ -560,7 +560,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000001c3800001e38000020380000223800002438000026380000283800002a3800002c3800002e3800008e38000092380000
+    m_ExpandedIDs: 00000000e0360000e2360000e4360000e6360000e8360000ea360000ec360000ee360000f0360000f2360000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -585,24 +585,24 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: f0e3ffff
-    m_LastClickedInstanceID: -7184
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: c8390000
+    m_LastClickedInstanceID: 14792
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: puzzle1
+      m_OriginalName: puzzle1
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 16954
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 11}
     m_CreateAssetUtility:
