@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\SalaPrincipal\parede3.cs" />
     <Compile Include="Assets\Scripts\SalaPrincipal\parede4.cs" />
     <Compile Include="Assets\Scripts\SalaPrincipal\rotacao.cs" />
+    <None Include="Assets\Moveis\Moveis 1\Settings\Note.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>E:/Marcelo/Documentos/GitHub/A-Carta-Roubada/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
