@@ -901,9 +901,9 @@ GameObject:
   - component: {fileID: 2129207866}
   - component: {fileID: 2129207865}
   - component: {fileID: 2129207864}
-  - component: {fileID: 2129207868}
   - component: {fileID: 2129207869}
   - component: {fileID: 2129207870}
+  - component: {fileID: 2129207868}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged

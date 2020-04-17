@@ -6,13 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class desafio1 : MonoBehaviour
 {
-    public GameObject Painel;
     public GameObject Jogador;
     public GameObject Camera;
 
     void Start()
     {
-        Painel.gameObject.SetActive(false);
+        
     }
 
     // Update is called once per frame

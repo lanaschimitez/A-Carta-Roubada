@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class puzzle1 : MonoBehaviour
+public class Puzzle1 : MonoBehaviour
 {
     public float speed = 5.0f;
     void Start()
