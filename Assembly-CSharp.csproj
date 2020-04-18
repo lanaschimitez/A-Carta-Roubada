@@ -63,12 +63,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Joystick Pack\Examples\JoystickSetterExample.cs" />
-    <Compile Include="Assets\Joystick Pack\Scripts\Base\Joystick.cs" />
-    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
-    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
-    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
-    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
+    <Compile Include="Assets\Joystick\Examples\JoystickSetterExample.cs" />
+    <Compile Include="Assets\Joystick\Scripts\Base\Joystick.cs" />
+    <Compile Include="Assets\Joystick\Scripts\Joysticks\DynamicJoystick.cs" />
+    <Compile Include="Assets\Joystick\Scripts\Joysticks\FixedJoystick.cs" />
+    <Compile Include="Assets\Joystick\Scripts\Joysticks\FloatingJoystick.cs" />
+    <Compile Include="Assets\Joystick\Scripts\Joysticks\VariableJoystick.cs" />
     <Compile Include="Assets\Scripts\Menu Principal\controlMenu.cs" />
     <Compile Include="Assets\Scripts\Puzzle1\Puzzle1.cs" />
     <Compile Include="Assets\Scripts\Puzzle2\CaixaDeEscrita.cs" />
@@ -83,7 +83,6 @@
     <Compile Include="Assets\Scripts\SalaPrincipal\parede3.cs" />
     <Compile Include="Assets\Scripts\SalaPrincipal\parede4.cs" />
     <Compile Include="Assets\Scripts\SalaPrincipal\rotacao.cs" />
-    <None Include="Assets\Moveis\Moveis 1\Settings\Note.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>E:/Marcelo/Documentos/GitHub/A-Carta-Roubada/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

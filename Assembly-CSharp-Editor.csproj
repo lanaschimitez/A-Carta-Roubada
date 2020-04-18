@@ -63,10 +63,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Joystick Pack\Scripts\Editor\DynamicJoystickEditor.cs" />
-    <Compile Include="Assets\Joystick Pack\Scripts\Editor\FloatingJoystickEditor.cs" />
-    <Compile Include="Assets\Joystick Pack\Scripts\Editor\JoystickEditor.cs" />
-    <Compile Include="Assets\Joystick Pack\Scripts\Editor\VariableJoystickEditor.cs" />
+    <Compile Include="Assets\Joystick\Scripts\Editor\DynamicJoystickEditor.cs" />
+    <Compile Include="Assets\Joystick\Scripts\Editor\FloatingJoystickEditor.cs" />
+    <Compile Include="Assets\Joystick\Scripts\Editor\JoystickEditor.cs" />
+    <Compile Include="Assets\Joystick\Scripts\Editor\VariableJoystickEditor.cs" />
     <Reference Include="UnityEditor.TestRunner">
       <HintPath>E:/Marcelo/Documentos/GitHub/A-Carta-Roubada/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>

@@ -6,9 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class desafio1 : MonoBehaviour
 {
-    public GameObject Jogador;
-    public GameObject Camera;
-
+    public GameObject personagem;
+    public Vector3 posiPerson;
     void Start()
     {
         
@@ -17,13 +16,26 @@ public class desafio1 : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
-        
-    }
-    public void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "player")
+        posiPerson = personagem.transform.position;
+
+        if (Input.GetMouseButtonDown(0))
         {
-            SceneManager.LoadScene("Puzzle 1");
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit) && posiPerson.x > 29 && posiPerson.z > 40)
+            {
+                if (hit.transform.name == "quadro")
+                {
+                    SceneManager.LoadScene("Puzzle 1");
+                }
+            }
         }
     }
+    //public void OnTriggerEnter(Collider other)
+    //{
+    //   if (other.gameObject.tag == "player")
+    //    {
+    //        SceneManager.LoadScene("Puzzle 1");
+    //    }
+    //}
 }
