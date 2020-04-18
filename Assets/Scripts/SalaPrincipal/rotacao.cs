@@ -5,9 +5,10 @@ using UnityEngine;
 public class rotacao : MonoBehaviour
 {
     float velocidadeRotacao = 10;
+
     void Update()
     {
-        if(Input.touchCount == 1 && Input.GetTouch(0).phase == TouchPhase.Moved)
+        if(Input.touchCount >= 1 && Input.GetTouch(0).phase == TouchPhase.Moved)
         {
             Vector2 posicaoToque = Input.GetTouch(0).deltaPosition;
             float x = posicaoToque.x * Mathf.Deg2Rad * velocidadeRotacao;
