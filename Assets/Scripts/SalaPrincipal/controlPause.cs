@@ -10,6 +10,7 @@ public class controlPause : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        PlayerPrefs.SetInt("inicio_on", 1);
         panel.SetActive(false);
     }
 

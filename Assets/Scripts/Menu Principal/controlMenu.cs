@@ -19,7 +19,16 @@ public class controlMenu : MonoBehaviour
 
     public void startGame()
     {
-        Time.timeScale = 1;
-        SceneManager.LoadScene("Sala Principal");
+        if (PlayerPrefs.GetInt("inicio_on") == 0)
+        {
+            Time.timeScale = 1;
+            SceneManager.LoadScene("Animacao Inicial");
+        }
+
+        if (PlayerPrefs.GetInt("inicio_on") == 1)
+        {
+            Time.timeScale = 1;
+            SceneManager.LoadScene("Sala Principal");
+        }
     }
 }
