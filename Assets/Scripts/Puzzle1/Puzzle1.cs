@@ -19,7 +19,7 @@ public class Puzzle1 : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Barreira")
-            transform.position = new Vector3(-7.0f, -4.0f, 0f);
+            transform.position = new Vector3(-5.704f, -2.833f, 0f);
         if (other.tag == "Final")
         {
             Debug.Log("Ganhou");
