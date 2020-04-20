@@ -70,6 +70,7 @@
     <Compile Include="Assets\Joystick\Scripts\Joysticks\FloatingJoystick.cs" />
     <Compile Include="Assets\Joystick\Scripts\Joysticks\VariableJoystick.cs" />
     <Compile Include="Assets\Scripts\Animacao Inicial\controlAnimacao.cs" />
+    <Compile Include="Assets\Scripts\Menu Principal\LOAD.cs" />
     <Compile Include="Assets\Scripts\Menu Principal\controlMenu.cs" />
     <Compile Include="Assets\Scripts\Puzzle1\JoystickPlayerPuzzle.cs" />
     <Compile Include="Assets\Scripts\Puzzle1\Puzzle1.cs" />
