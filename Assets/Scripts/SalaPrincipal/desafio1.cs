@@ -8,6 +8,7 @@ public class desafio1 : MonoBehaviour
 {
     public GameObject personagem;
     public Vector3 posiPerson;
+    public Material materialFinal;
     void Start()
     {
         
@@ -26,9 +27,15 @@ public class desafio1 : MonoBehaviour
             {
                 if (hit.transform.name == "quadro")
                 {
+                    PlayerPrefs.SetInt("quadro_on", 0);
                     SceneManager.LoadScene("Puzzle 1");
                 }
             }
+        }
+        if (PlayerPrefs.GetInt("quadro_on") == 1)
+        {
+            this.gameObject.GetComponent<Renderer>().material = materialFinal;
+            this.gameObject.GetComponent<desafio1>().enabled = false;
         }
     }
     //public void OnTriggerEnter(Collider other)

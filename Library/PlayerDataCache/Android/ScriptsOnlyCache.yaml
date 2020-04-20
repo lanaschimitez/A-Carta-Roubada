@@ -577,7 +577,7 @@ ScriptsOnlyBuild:
     className: ControlPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: 7c9ae4b0f63edbac167fe8fd2ab152b5
+      Hash: e5510c53b084697836d6726262185468
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: desafio1

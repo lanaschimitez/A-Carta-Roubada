@@ -13729,6 +13729,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   personagem: {fileID: 1414444833}
   posiPerson: {x: 0, y: 0, z: 0}
+  materialFinal: {fileID: 2100000, guid: 61ea1450417525f41b1b0a7a8b62c926, type: 2}
 --- !u!1001 &1011196617
 PrefabInstance:
   m_ObjectHideFlags: 0
