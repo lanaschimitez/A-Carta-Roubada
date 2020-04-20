@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CaixaDeEscrita : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class CaixaDeEscrita : MonoBehaviour
     public char[] enigmaArray;
     public string resultado;
     public string enigma;
+
+    public GameObject fire;
 
     void Start()
     {
@@ -23,6 +26,16 @@ public class CaixaDeEscrita : MonoBehaviour
         var input = gameObject.GetComponent<InputField>(); //recebe o que o usuario digitar
         input.onEndEdit.AddListener(SubmitName);
 
+    }
+
+    public void Update()
+    {
+        //Teste para voltar a sala principal
+        if(Input.touchCount > 1)
+        {
+            PlayerPrefs.SetInt("fire_on", 1);
+            SceneManager.LoadScene("Sala Principal");            
+        }
     }
     private void SubmitName(string arg0)
     {

@@ -343,6 +343,7 @@ MonoBehaviour:
   enigmaArray: 
   resultado: 
   enigma: 
+  fire: {fileID: 6811103414273482564, guid: b38b9a6ebd918974b8804c37393d83e1, type: 3}
 --- !u!1 &453659220
 GameObject:
   m_ObjectHideFlags: 0
