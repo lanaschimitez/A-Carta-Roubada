@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 12004, y: 14042}
   vertical: 1
-  controlID: 3606
+  controlID: 71
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 221}
   m_MaxSize: {x: 12004, y: 4021}
   vertical: 0
-  controlID: 3607
+  controlID: 66
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -197,21 +197,21 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: fcbdffffdee1ffff9ee3fffff8f5ffff42fbffff86370000b84100002c42000036490000
+      m_ExpandedIDs: fcf8ffff42fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Cube (11)
-        m_OriginalName: Cube (11)
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 18800
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -286,9 +286,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 2.8546128, y: 16.781895, z: 0.13120735}
+    m_Target: {x: 6.845954, y: 0.06485553, z: 3.7703152}
     speed: 2
-    m_Value: {x: 2.8546128, y: 16.781895, z: 0.13120735}
+    m_Value: {x: 6.845954, y: 0.06485553, z: 3.7703152}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -338,9 +338,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.0078088967, y: -0.015902983, z: 0.00011481687, w: -0.9998431}
   m_Size:
-    m_Target: 19.126822
+    m_Target: 22.775583
     speed: 2
-    m_Value: 19.126822
+    m_Value: 22.775583
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -517,7 +517,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
-  m_LastInspectedObjectInstanceID: 14788
+  m_LastInspectedObjectInstanceID: -1
   m_LastVerticalScrollValue: 0
 --- !u!114 &12
 MonoBehaviour:
@@ -584,19 +584,19 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Images
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Images
   m_LastFoldersGridSize: 16
   m_LastProjectPath: E:\Marcelo\Documentos\GitHub\A-Carta-Roubada
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: b23a0000
-    m_LastClickedID: 15026
+    m_SelectedIDs: 543a0000
+    m_LastClickedID: 14932
     m_ExpandedIDs: 00000000f8390000fa390000fc390000fe390000003a0000023a0000043a0000063a0000083a00000a3a00000c3a00000e3a0000103a0000123a0000143a0000163a0000183a00001a3a00001c3a00001e3a0000203a0000223a0000243a0000263a0000283a00002a3a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -650,8 +650,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: c4390000
-    m_LastClickedInstanceID: 14788
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 00000000785c0000
     m_RenameOverlay:
