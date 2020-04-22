@@ -36,4 +36,8 @@ public class Puzzle1 : MonoBehaviour
         transform.Translate(0, vertical, 0);
     }
 
+    public void sairPuzzle()
+    {
+        SceneManager.LoadScene("Sala Principal");
+    }
 }
