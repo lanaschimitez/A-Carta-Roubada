@@ -1,5 +1,5 @@
 sceneSetups:
-- path: "Assets/Scenes/Puzzle 4 - Quebra-Cabe\xE7a.unity"
+- path: Assets/Scenes/Sala Principal.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
