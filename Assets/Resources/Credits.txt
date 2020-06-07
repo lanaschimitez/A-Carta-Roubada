@@ -1,0 +1,81 @@
+t:Game Designers
+Evaldo Araujo
+Nathan Coliado Santana
+Marcelo Augusto Danelon
+Lana Eduarda Schimitez
+
+t:Programmers
+Marcelo Augusto Danelon
+Nathan Coliado Santana
+Lana Eduarda Schimitez
+
+t:Artists
+Nathan Coliado Santana
+Rafael Cabral Lee
+
+t:UI Artist
+Marcelo Augusto Danelon
+
+t:Tech Artists
+Lana Schimitez
+Marcelo Augusto Danelon
+Nathan Coliado Santana
+
+t:Writer
+Evaldo Araujo
+
+t:Sound Designer
+Nathan Coliado Santana
+Evaldo Araujo
+
+Assets Unity
+PixelWhat
+https://assetstore.unity.com/packages/3d/props/furniture/antique-living-room-set-109193
+
+Mario Haberle
+https://assetstore.unity.com/packages/3d/props/furniture/arm-chair-80384
+
+Omni Studio
+https://assetstore.unity.com/packages/3d/environments/free-medieval-room-131004
+
+Azerilo
+https://assetstore.unity.com/packages/3d/props/interior/free-rug-pack-118178
+
+Fenerax Studios
+https://assetstore.unity.com/packages/tools/input-management/joystick-pack-107631
+
+3DeLucas
+https://assetstore.unity.com/packages/3d/props/furniture/medieval-tavern-pack-112546
+
+Karboosx
+https://assetstore.unity.com/packages/3d/environments/fantasy/mega-fantasy-props-pack-87811
+
+Mandrill
+https://assetstore.unity.com/packages/3d/props/pbr-prop-mechanic-box-24962
+
+Miroslav Uhli
+https://assetstore.unity.com/packages/3d/props/interior/piano-154
+
+3Dfrk
+https://assetstore.unity.com/packages/3d/props/interior/picture-frames-with-photos-106907
+
+Studio New Punch
+https://assetstore.unity.com/packages/3d/characters/humanoids/man-in-a-suit-51662
+
+
+
+
+t:Agradecimentos
+Silvia
+Gustavo
+Luciene
+Paula
+
+
+
+t:Integrantes
+Lana Eduarda Schimitez
+Evaldo Araujo
+Marcelo Augusto Danelon
+Nathan Coliado Santana
+Rafael Cabral Lee
