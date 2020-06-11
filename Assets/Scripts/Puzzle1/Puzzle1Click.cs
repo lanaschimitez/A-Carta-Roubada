@@ -39,11 +39,14 @@ public class Puzzle1Click : MonoBehaviour
             //Se o ray acertar (hit) o Collider (não 2DCollider)
             if (Physics.Raycast(ray, out hit))
             {
-                gameObjectTodrag = hit.collider.gameObject;
-                GOcenter = gameObjectTodrag.transform.position;
-                touchPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                offset = touchPosition - GOcenter;
-                draggingMode = true;
+                if (hit.collider.gameObject.CompareTag("player"))
+                {
+                    gameObjectTodrag = hit.collider.gameObject;
+                    GOcenter = gameObjectTodrag.transform.position;
+                    touchPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                    offset = touchPosition - GOcenter;
+                    draggingMode = true;
+                }
             }
         }
 
