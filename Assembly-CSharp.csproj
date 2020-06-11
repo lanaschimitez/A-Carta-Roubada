@@ -74,7 +74,6 @@
     <Compile Include="Assets\Scripts\Credits\Credits.cs" />
     <Compile Include="Assets\Scripts\Menu Principal\LOAD.cs" />
     <Compile Include="Assets\Scripts\Menu Principal\controlMenu.cs" />
-    <Compile Include="Assets\Scripts\Puzzle1\JoystickPlayerPuzzle.cs" />
     <Compile Include="Assets\Scripts\Puzzle1\Puzzle1.cs" />
     <Compile Include="Assets\Scripts\Puzzle1\Puzzle1Click.cs" />
     <Compile Include="Assets\Scripts\Puzzle1\Puzzle1Touch.cs" />
