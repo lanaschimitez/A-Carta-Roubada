@@ -6,8 +6,8 @@ using System;
 
 public class MovimentacaoPeca : MonoBehaviour
 {
-    public GameObject[] gameObjectTodrag = new GameObject[9]; //Objeto que sera movido
-    public bool[] lugarCorreto = new bool[9];
+    public GameObject[] gameObjectTodrag = new GameObject[6]; //Objeto que sera movido
+    public bool[] lugarCorreto = new bool[6];
     private bool vitoria = false;
     private int ordem; //ordem do objeto
     
@@ -50,7 +50,7 @@ public class MovimentacaoPeca : MonoBehaviour
             ordem = 0;
         }
 
-        for(int i = 1; i < 9; i++)
+        for(int i = 1; i < 6; i++)
         {
             if (lugarCorreto[i] != true)
             {
