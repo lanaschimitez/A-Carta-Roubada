@@ -21,7 +21,7 @@ public class OrdemPedaco : MonoBehaviour
 
         _distancia = Vector3.Distance(posicaoPedaco, posicaoLugar);
 
-        if (_distancia < 0.2f)
+        if (_distancia < 0.25f)
         {
             transform.position = posicaoLugar;
             lugarCorreto = true;

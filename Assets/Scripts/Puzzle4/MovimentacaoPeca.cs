@@ -7,15 +7,18 @@ using System;
 public class MovimentacaoPeca : MonoBehaviour
 {
     public GameObject[] gameObjectTodrag = new GameObject[6]; //Objeto que sera movido
+    public GameObject _CartaFinal;
+    private bool final = false;
     public bool[] lugarCorreto = new bool[6];
     private bool vitoria = false;
     private int ordem; //ordem do objeto
     
+
     private Vector3 GOcenter; //Centro do objeto
     private Vector3 touchPosition; //Touch ou posição do Click
     private Vector3 offset;//vector entre touchpoint/mouseclick para o Centro do Objeto
     private Vector3 newGOCenter; //novo Centro do objeto
-    RaycastHit hit; //Armazena informação que pegou o objeto
+    private RaycastHit hit; //Armazena informação que pegou o objeto
     private bool draggingMode = false;
 
     void Update()
@@ -62,7 +65,13 @@ public class MovimentacaoPeca : MonoBehaviour
                 vitoria = true;
             }
         }
-        if (vitoria){ Debug.Log("Ganhou"); //inciar animacao da carta
+        if (vitoria){ 
+            Debug.Log("Ganhou"); //inciar animacao da carta
+            if (!final)
+            {
+                Instantiate(_CartaFinal, transform.position, Quaternion.identity);
+                final = true;
+            }
         }
     }
 }
