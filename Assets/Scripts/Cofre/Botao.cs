@@ -4,57 +4,58 @@ using UnityEngine;
 
 public class Botao : MonoBehaviour
 {
-    public float speed = 5.0f;
-    public float reductionRadius = 1.0f;
-    float velocidadeRotacao = 20;
-    public Vector2 posicaoToque;
-    public GameObject gameObjectTodrag; //Objeto que sera movido
-
-
-    private Vector3 GOcenter; //Centro do objeto
-    private Vector3 touchPosition; //Touch ou posição do Click
-    private Vector3 offset;//vector entre touchpoint/mouseclick para o Centro do Objeto
-    private Vector3 newGOCenter; //novo Centro do objeto
-    private RaycastHit hit; //Armazena informação que pegou o objeto
-    private bool draggingMode = false;
-
+    [Range(0.01f, 90.0f)] public float anguloInclinacao = 90.0f;
+    public bool onMouseDown = false;
+    public bool[] correto = new bool[5];
+    public Vector3 anguloBotao;
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (onMouseDown)
         {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out hit))
+            var objectPos = Camera.main.WorldToScreenPoint(transform.position);
+            var dir = Input.mousePosition - objectPos;
+            float rotacZ = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+            if (rotacZ > -90.0f && rotacZ < 90.0f)
             {
-                gameObjectTodrag = hit.collider.gameObject; //mudar para varios objetos
-                GOcenter = gameObjectTodrag.transform.position;
-                touchPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                offset = touchPosition - GOcenter;
-                draggingMode = true;
-                posicaoToque = Input.GetTouch(0).deltaPosition;
+                if (rotacZ > anguloInclinacao)
+                {
+                    rotacZ = anguloInclinacao;
+                }
+                else if (rotacZ < -anguloInclinacao)
+                {
+                    rotacZ = -anguloInclinacao;
+                }
+            }
+            else
+            {
+                if (rotacZ < (180.0f - anguloInclinacao) && rotacZ > 0.0f)
+                {
+                    rotacZ = (180.0f - anguloInclinacao);
+                }
+                else if (rotacZ > -(180.0f - anguloInclinacao) && rotacZ < 0.0f)
+                {
+                    rotacZ = -(180.0f - anguloInclinacao);
+                }
+            }
+            transform.rotation = Quaternion.Euler(new Vector3(0.0f, 0.0f, rotacZ));
+            if (this.anguloBotao.z == this.transform.rotation.z)
+            {
+                Debug.Log("YESSS");
+            }
+        }
+    }
+    private void OnMouseUp()
+    {
+        onMouseDown = false;
+    }
 
-            }
-        }
-        if (Input.GetMouseButton(0))
-        {
-            if (draggingMode)
-            {
-                touchPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                newGOCenter = touchPosition - offset;
-                gameObjectTodrag.transform.rotation = Quaternion.Euler(0, 0, GOcenter.z);
-            }
-        }
-        //Quando solta o click do mouse
-        if (Input.GetMouseButtonUp(0))
-        {
-            draggingMode = false;
-        }
-        /*if (Input.touchCount == 1 && Input.GetTouch(0).phase == TouchPhase.Moved)
-        {
-            posicaoToque = Input.GetTouch(0).deltaPosition;
-            float z = posicaoToque.x * Mathf.Deg2Rad * velocidadeRotacao;
-            float y = posicaoToque.y * Mathf.Deg2Rad * velocidadeRotacao;
-            //transform.RotateAround(Vector3.zero, Vector3.forward, z);
-            transform.rotation = Quaternion.Euler(0, 0, posicaoToque.magnitude);
-        }*/
+    private void OnMouseDrag()
+    {
+        onMouseDown = true;
+    }
+
+    private void OnMouseExit()
+    {
+        onMouseDown = false;
     }
 }
