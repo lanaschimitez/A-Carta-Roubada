@@ -6,6 +6,7 @@ public class Botao : MonoBehaviour
 {
     [Range(0.01f, 90.0f)] public float anguloInclinacao = 90.0f;
     public bool onMouseDown = false;
+    public bool teste = false;
     public bool[] correto = new bool[5];
     public Vector3 anguloBotao;
     void Update()
@@ -38,9 +39,13 @@ public class Botao : MonoBehaviour
                 }
             }
             transform.rotation = Quaternion.Euler(new Vector3(0.0f, 0.0f, rotacZ));
-            if (this.anguloBotao.z == this.transform.rotation.z)
+            if (this.teste == true) // arumar
             {
-                Debug.Log("YESSS");
+                Debug.Log(rotacZ);
+                if ((anguloBotao.z >= rotacZ - 1) && anguloBotao.z <= rotacZ + 1)
+                {
+                    Debug.Log("ALELUIA");
+                }
             }
         }
     }
@@ -52,6 +57,7 @@ public class Botao : MonoBehaviour
     private void OnMouseDrag()
     {
         onMouseDown = true;
+        //transform.localScale = new Vector3(7, 7, 8); //arrumar
     }
 
     private void OnMouseExit()
