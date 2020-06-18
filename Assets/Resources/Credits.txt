@@ -1,13 +1,13 @@
 t:Game Designers
 Evaldo Araujo
+Lana Eduarda Schimitez
 Nathan Coliado Santana
 Marcelo Augusto Danelon
-Lana Eduarda Schimitez
 
 t:Programmers
+Lana Eduarda Schimitez
 Marcelo Augusto Danelon
 Nathan Coliado Santana
-Lana Eduarda Schimitez
 
 t:Artists
 Nathan Coliado Santana
@@ -25,8 +25,8 @@ t:Writer
 Evaldo Araujo
 
 t:Sound Designer
-Nathan Coliado Santana
 Evaldo Araujo
+Nathan Coliado Santana
 
 Assets Unity
 PixelWhat
