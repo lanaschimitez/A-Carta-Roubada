@@ -238,9 +238,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anguloInclinacao: 90
   onMouseDown: 0
-  teste: 0
+  teste: 1
   correto: 0000000000
-  anguloBotao: {x: 0, y: 0, z: 0}
+  anguloBotao: {x: 0, y: 0, z: -116.435}
 --- !u!135 &872963602
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -370,7 +370,7 @@ MonoBehaviour:
   onMouseDown: 0
   teste: 0
   correto: 0000000000
-  anguloBotao: {x: 0, y: 0, z: 0}
+  anguloBotao: {x: 0, y: 0, z: -1.333}
 --- !u!135 &1232967469
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -592,7 +592,7 @@ MonoBehaviour:
   onMouseDown: 0
   teste: 0
   correto: 0000000000
-  anguloBotao: {x: 0, y: 0, z: 0}
+  anguloBotao: {x: 0, y: 0, z: 171.272}
 --- !u!135 &1411879393
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -722,7 +722,7 @@ MonoBehaviour:
   onMouseDown: 0
   teste: 0
   correto: 0000000000
-  anguloBotao: {x: 0, y: 0, z: 0}
+  anguloBotao: {x: 0, y: 0, z: 96.56001}
 --- !u!135 &1867853931
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -933,7 +933,7 @@ MonoBehaviour:
   onMouseDown: 0
   teste: 0
   correto: 0000000000
-  anguloBotao: {x: 0, y: 0, z: 0}
+  anguloBotao: {x: 0, y: 0, z: -1}
 --- !u!135 &1929729799
 SphereCollider:
   m_ObjectHideFlags: 0
