@@ -11,7 +11,7 @@ public class CaixaDeEscrita : MonoBehaviour
     public string resultado;
     public string enigma;
 
-    public GameObject fire;
+    //public GameObject fire;
 
     void Start()
     {
@@ -39,6 +39,8 @@ public class CaixaDeEscrita : MonoBehaviour
     }
     private void SubmitName(string arg0)
     {
+        Debug.Log(arg0);
+        arg0 = arg0.ToLower(); //tranformando a string em letras minusculas
         Debug.Log(arg0);
         Debug.Log("    Is str1 equal to str2?: {0}" + string.Equals(arg0, enigma)); //verificar se o usuario acertou
     }
