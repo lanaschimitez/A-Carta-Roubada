@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 1890760246441291678}
   m_LocalRotation: {x: -0, y: -0, z: 0.49980265, w: 0.86613935}
   m_LocalPosition: {x: -6.88, y: 1.36, z: -1}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -127,3 +127,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anguloInclinacao: 90
   onMouseDown: 0
+  teste: 0
+  correto: 0000000000
+  anguloBotao: {x: 0, y: 0, z: 0}

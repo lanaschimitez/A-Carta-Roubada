@@ -7,6 +7,7 @@ using System;
 public class MovimentacaoPeca : MonoBehaviour
 {
     public GameObject[] gameObjectTodrag = new GameObject[6]; //Objeto que sera movido
+    public GameObject[] gameObjectList = new GameObject[6]; //Objeto que sera movido
     public GameObject _CartaFinal;
     private bool final = false;
     public bool[] lugarCorreto = new bool[6];
@@ -53,7 +54,7 @@ public class MovimentacaoPeca : MonoBehaviour
             ordem = 0;
         }
 
-        for(int i = 1; i < 6; i++)
+        for(int i = 0; i < 6; i++)
         {
             if (lugarCorreto[i] != true)
             {
@@ -69,7 +70,11 @@ public class MovimentacaoPeca : MonoBehaviour
             Debug.Log("Ganhou"); //inciar animacao da carta
             if (!final)
             {
-                Instantiate(_CartaFinal, transform.position, Quaternion.identity);
+                for (int i = 0; i < 6; i++)
+                {
+                    gameObjectList[i].SetActive(false);
+                }
+                    Instantiate(_CartaFinal, transform.position, Quaternion.identity);
                 final = true;
             }
         }
