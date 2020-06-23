@@ -222,6 +222,7 @@ MonoBehaviour:
   game: {fileID: 0}
   control: {fileID: 0}
   order: 0
+  teste: 0
 --- !u!54 &65134811
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -259,7 +260,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 65134807}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.911361, y: 6.868885, z: 0.2}
@@ -353,10 +354,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac6d2db1ad0e94240a3727f0377d6cc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idButton: 11
+  idButton: 14
   game: {fileID: 0}
   control: {fileID: 0}
   order: 0
+  teste: 0
 --- !u!212 &115922216
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -472,6 +474,7 @@ MonoBehaviour:
   game: {fileID: 0}
   control: {fileID: 0}
   order: 0
+  teste: 0
 --- !u!212 &175806373
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -601,6 +604,7 @@ MonoBehaviour:
   game: {fileID: 0}
   control: {fileID: 0}
   order: 0
+  teste: 0
 --- !u!212 &258791410
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -731,6 +735,7 @@ MonoBehaviour:
   game: {fileID: 0}
   control: {fileID: 0}
   order: 0
+  teste: 0
 --- !u!212 &318266248
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -874,6 +879,7 @@ MonoBehaviour:
   game: {fileID: 0}
   control: {fileID: 0}
   order: 0
+  teste: 0
 --- !u!212 &431460820
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -980,10 +986,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a2207cc86b2ddb499fc27c41214d8bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idLightsU: 000000000000000000000000000000000000000000000000000000000000000000000000
-  order: 0
-  correcao: 000000000000000000
-  resultado: 0
+  ordem1: 
+  ordem2: 
+  ordem3: 
+  ordemTeclasCorretas: 000000000000000000000000000000000000000000000000000000000000000000000000
+  ordemTeclasClicadas: 000000000000000000000000000000000000000000000000000000000000000000000000
+  teclasClicadasCorretamentes: 000000000000000000
+  auxOrdem: 0
+  troca: 0
 --- !u!4 &642925564
 Transform:
   m_ObjectHideFlags: 0
@@ -1165,6 +1175,7 @@ MonoBehaviour:
   game: {fileID: 0}
   control: {fileID: 0}
   order: 0
+  teste: 0
 --- !u!212 &778902346
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1413,6 +1424,7 @@ MonoBehaviour:
   game: {fileID: 0}
   control: {fileID: 0}
   order: 0
+  teste: 0
 --- !u!212 &851426316
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1625,6 +1637,7 @@ MonoBehaviour:
   game: {fileID: 0}
   control: {fileID: 0}
   order: 0
+  teste: 0
 --- !u!212 &871507794
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1829,10 +1842,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac6d2db1ad0e94240a3727f0377d6cc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idButton: 11
+  idButton: 19
   game: {fileID: 0}
   control: {fileID: 0}
   order: 0
+  teste: 0
 --- !u!212 &1200255456
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1986,10 +2000,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac6d2db1ad0e94240a3727f0377d6cc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idButton: 13
+  idButton: 16
   game: {fileID: 0}
   control: {fileID: 0}
   order: 0
+  teste: 0
 --- !u!212 &1329745059
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2157,7 +2172,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -111.1, y: -71.3}
+  m_AnchoredPosition: {x: -111.1001, y: -71.30005}
   m_SizeDelta: {x: 130.2, y: 79.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1465030036
@@ -2372,6 +2387,7 @@ MonoBehaviour:
   game: {fileID: 0}
   control: {fileID: 0}
   order: 0
+  teste: 0
 --- !u!212 &1536841230
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2551,10 +2567,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac6d2db1ad0e94240a3727f0377d6cc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idButton: 15
+  idButton: 18
   game: {fileID: 0}
   control: {fileID: 0}
   order: 0
+  teste: 0
 --- !u!212 &1577757223
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2671,6 +2688,7 @@ MonoBehaviour:
   game: {fileID: 0}
   control: {fileID: 0}
   order: 0
+  teste: 0
 --- !u!212 &1630968783
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2823,10 +2841,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac6d2db1ad0e94240a3727f0377d6cc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idButton: 12
+  idButton: 20
   game: {fileID: 0}
   control: {fileID: 0}
   order: 0
+  teste: 0
 --- !u!212 &1646765637
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2943,6 +2962,7 @@ MonoBehaviour:
   game: {fileID: 0}
   control: {fileID: 0}
   order: 0
+  teste: 0
 --- !u!212 &1733142272
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3235,6 +3255,7 @@ MonoBehaviour:
   game: {fileID: 0}
   control: {fileID: 0}
   order: 0
+  teste: 0
 --- !u!212 &1910855344
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3374,10 +3395,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac6d2db1ad0e94240a3727f0377d6cc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idButton: 12
+  idButton: 15
   game: {fileID: 0}
   control: {fileID: 0}
   order: 0
+  teste: 0
 --- !u!212 &1985134835
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3490,10 +3512,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac6d2db1ad0e94240a3727f0377d6cc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idButton: 15
+  idButton: 13
   game: {fileID: 0}
   control: {fileID: 0}
   order: 0
+  teste: 0
 --- !u!212 &2030694450
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3646,10 +3669,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac6d2db1ad0e94240a3727f0377d6cc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idButton: 14
+  idButton: 17
   game: {fileID: 0}
   control: {fileID: 0}
   order: 0
+  teste: 0
 --- !u!212 &2090159631
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3789,10 +3813,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac6d2db1ad0e94240a3727f0377d6cc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idButton: 15
+  idButton: 21
   game: {fileID: 0}
   control: {fileID: 0}
   order: 0
+  teste: 0
 --- !u!212 &2097323630
 SpriteRenderer:
   m_ObjectHideFlags: 0

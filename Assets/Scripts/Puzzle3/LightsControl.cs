@@ -9,6 +9,7 @@ public class LightsControl : MonoBehaviour
     public GameObject game;
     public GameObject control;
     public int order;
+    public bool teste;
 
     RaycastHit hit; //Armazena informação que pegou o objeto
     void Start()
@@ -17,7 +18,6 @@ public class LightsControl : MonoBehaviour
     }
     void Update()
     {
-        order = control.GetComponent<LightsID>().order;
         if (Input.GetMouseButtonDown(0))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -25,8 +25,9 @@ public class LightsControl : MonoBehaviour
             {
                 game = hit.collider.gameObject; //mudar para varios objetos
                 game.GetComponent<SpriteRenderer>().color = Color.black;
-                control.GetComponent<LightsID>().idLightsU[order] = game.GetComponent<LightsControl>().idButton;
+                control.GetComponent<LightsID>().ordemTeclasClicadas[order] = game.GetComponent<LightsControl>().idButton; // vai passar para o lightsID a tecla clicada
             }
         }
+        order = control.GetComponent<LightsID>().auxOrdem;
     }
 }
