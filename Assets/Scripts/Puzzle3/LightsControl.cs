@@ -6,25 +6,22 @@ using UnityEngine.UI;
 public class LightsControl : MonoBehaviour
 {
     public int idButton;
-    public GameObject game;
-    public GameObject control;
+    private GameObject game;
+    private GameObject objetoControle;
     public int order;
-    public float tempo = 2.0f;
-    public Color newColor;
     public Color corOriginal;
     public bool mudançaCor;
+    private IEnumerator coresCoroutine;
 
     RaycastHit hit; //Armazena informação que pegou o objeto
     void Start()
     {
         mudançaCor = true;
-        control = GameObject.Find("LightsID");
-        newColor = new Vector4(0.9716981f, 0.9569415f, 0.9166963f, 1.0f);
-
+        objetoControle = GameObject.Find("LightsID");
     }
     void Update()
     {
-        if (control.GetComponent<LightsID>().liberado && order < 9)
+        if (objetoControle.GetComponent<LightsID>().liberado && order < 9)
         {
             if (mudançaCor)
             {
@@ -37,11 +34,26 @@ public class LightsControl : MonoBehaviour
                 if (Physics.Raycast(ray, out hit))
                 {
                     game = hit.collider.gameObject; //mudar para varios objetos
-                    control.GetComponent<LightsID>().ordemTeclasClicadas[order] = game.GetComponent<LightsControl>().idButton; // vai passar para o lightsID a tecla clicada
-                    game.GetComponent<SpriteRenderer>().color = newColor;
+                    objetoControle.GetComponent<LightsID>().ordemTeclasClicadas[order] = game.GetComponent<LightsControl>().idButton; // vai passar para o lightsID a tecla clicada
+                    coresCoroutine = CorTecla(2.0f, game);
+                    StartCoroutine(coresCoroutine);
                 }
             }
-            order = control.GetComponent<LightsID>().auxOrdem;
+            order = objetoControle.GetComponent<LightsID>().auxOrdem;
+        }
+    }
+
+    IEnumerator CorTecla(float waitTime, GameObject game)
+    {
+        while (true)
+        {
+            waitTime -= Time.deltaTime;
+            game.GetComponent<SpriteRenderer>().color = Color.red;
+            if (waitTime < 0.1)
+            {
+                game.GetComponent<SpriteRenderer>().color = game.GetComponent<LightsControl>().corOriginal;
+            }
+            yield return null;
         }
     }
 }
