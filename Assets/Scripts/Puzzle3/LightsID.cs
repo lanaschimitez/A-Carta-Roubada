@@ -1,21 +1,28 @@
-﻿using System;
+﻿using JetBrains.Annotations;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class LightsID : MonoBehaviour
 {
-    public int[] ordem1;
-    public int[] ordem2;
-    public int[] ordem3;
+    private int[] ordem1;
+    private int[] ordem2;
+    private int[] ordem3;
     public int[] ordemTeclasCorretas = new int[9];
     public int[] ordemTeclasClicadas = new int[9];
-    public bool[] teclasClicadasCorretamentes = new bool[9];
+    public bool[] teclasClicadasCorretamentes = new bool[9]; 
     public int auxOrdem;
     public bool resultado;
+    public Color newColor;
+    public GameObject teclaColorida;
+    private int k = 0;
+    private IEnumerator coroutine;
+    public bool liberado;
 
     private void Start()
     {
+        liberado = false;
         auxOrdem = 0;
         ordem1 = new int[9] { 3, 5, 12, 13, 7, 1, 15, 20, 6 };
         ordem2 = new int[9] { 2, 20, 21, 8, 11, 4, 17, 5, 19 };
@@ -39,31 +46,64 @@ public class LightsID : MonoBehaviour
         {
             ordemTeclasCorretas = ordem3;
         }
+
+        coroutine = Luzes(3.0f);
+        StartCoroutine(coroutine);
     }
 
     private void Update()
     {
-        teclasClicadasCorretamentes[auxOrdem] = (ordemTeclasCorretas[auxOrdem] == ordemTeclasClicadas[auxOrdem]);
-        if (auxOrdem < 9 && ordemTeclasClicadas[auxOrdem] != 0)
+        if (k > 8)
         {
-            auxOrdem++;
+            StopCoroutine(coroutine);
+            liberado = true;
         }
-        if (ordemTeclasClicadas[20] != 0) //verificar se todos os botoes foram apertados
+        if (liberado)
         {
-            for (int i = 0; i < 21; i++)
+            if (auxOrdem < 9 && ordemTeclasClicadas[auxOrdem] != 0)
             {
-                if (teclasClicadasCorretamentes[i])
-                {
-                    resultado = true;
-                }
-                else
-                {
-                    resultado = false;
-                    break;
-                }
+                auxOrdem++;
             }
-            Debug.Log((resultado) ? "Ganhou" : "Perder");
+            if (ordemTeclasClicadas[8] != 0) //verificar se todos os botoes foram apertados
+            {
+                liberado = false;
+                for (int i = 0; i < 9; i++)
+                {
+                    teclasClicadasCorretamentes[i] = (ordemTeclasCorretas[i] == ordemTeclasClicadas[i]);
+                }
+                for (int i = 0; i < 9; i++)
+                {
+                    if (teclasClicadasCorretamentes[i])
+                    {
+                        resultado = true;
+                    }
+                    else
+                    {
+                        resultado = false;
+                        break;
+                    }
+                }
+                    Debug.Log((resultado) ? "Ganhou" : "Perder");
+            }
         }
+    }
 
+    private IEnumerator Luzes(float waitTime)
+    {
+        while (true)
+        {
+            int aux;
+            string auxString;
+            aux = ordemTeclasCorretas[k];
+            auxString = aux.ToString();
+            String nomeTecla = "Tecla";
+            nomeTecla = String.Concat(nomeTecla, auxString);
+            Debug.Log(nomeTecla);
+            teclaColorida = GameObject.Find(nomeTecla);
+            teclaColorida.GetComponent<SpriteRenderer>().color = Color.cyan;
+            k++;
+            yield return new WaitForSeconds(waitTime);
+        }
+            
     }
 }

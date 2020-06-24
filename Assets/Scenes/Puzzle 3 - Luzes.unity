@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 65134812}
   - component: {fileID: 65134813}
   m_Layer: 0
-  m_Name: Tecla
+  m_Name: Tecla1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -223,6 +223,10 @@ MonoBehaviour:
   control: {fileID: 0}
   order: 0
   teste: 0
+  tempo: 2
+  newColor: {r: 0, g: 0, b: 0, a: 0}
+  corOriginal: {r: 0.9725491, g: 0.9568628, b: 0.9176471, a: 1}
+  "mudan\xE7aCor": 0
 --- !u!54 &65134811
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -280,7 +284,7 @@ GameObject:
   - component: {fileID: 115922213}
   - component: {fileID: 115922212}
   m_Layer: 0
-  m_Name: Tecla (9)
+  m_Name: Tecla14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -359,6 +363,10 @@ MonoBehaviour:
   control: {fileID: 0}
   order: 0
   teste: 0
+  tempo: 2
+  newColor: {r: 0, g: 0, b: 0, a: 0}
+  corOriginal: {r: 0.972549, g: 0.9607843, b: 0.91764706, a: 1}
+  "mudan\xE7aCor": 0
 --- !u!212 &115922216
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -423,7 +431,7 @@ GameObject:
   - component: {fileID: 175806371}
   - component: {fileID: 175806370}
   m_Layer: 0
-  m_Name: Tecla Preta (3)
+  m_Name: Tecla9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -475,6 +483,10 @@ MonoBehaviour:
   control: {fileID: 0}
   order: 0
   teste: 0
+  tempo: 2
+  newColor: {r: 0, g: 0, b: 0, a: 0}
+  corOriginal: {r: 0, g: 0, b: 0, a: 0}
+  "mudan\xE7aCor": 0
 --- !u!212 &175806373
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -533,11 +545,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 175806369}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.7913211, y: -1.7118026, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.29880002, z: 1}
+  m_LocalPosition: {x: -0.7913212, y: -1.7118026, z: 0}
+  m_LocalScale: {x: 0.40000004, y: 0.29880002, z: 1}
   m_Children: []
   m_Father: {fileID: 1015860365}
-  m_RootOrder: 11
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &258791406
 GameObject:
@@ -553,7 +565,7 @@ GameObject:
   - component: {fileID: 258791408}
   - component: {fileID: 258791407}
   m_Layer: 0
-  m_Name: Tecla Preta
+  m_Name: Tecla2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -605,6 +617,10 @@ MonoBehaviour:
   control: {fileID: 0}
   order: 0
   teste: 0
+  tempo: 2
+  newColor: {r: 0, g: 0, b: 0, a: 0}
+  corOriginal: {r: 0, g: 0, b: 0, a: 0}
+  "mudan\xE7aCor": 0
 --- !u!212 &258791410
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -667,7 +683,7 @@ Transform:
   m_LocalScale: {x: 0.4, y: 0.29939735, z: 1}
   m_Children: []
   m_Father: {fileID: 1015860365}
-  m_RootOrder: 8
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &318266244
 GameObject:
@@ -684,7 +700,7 @@ GameObject:
   - component: {fileID: 318266245}
   - component: {fileID: 318266250}
   m_Layer: 0
-  m_Name: Tecla (2)
+  m_Name: Tecla5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -736,6 +752,10 @@ MonoBehaviour:
   control: {fileID: 0}
   order: 0
   teste: 0
+  tempo: 2
+  newColor: {r: 0, g: 0, b: 0, a: 0}
+  corOriginal: {r: 0.972549, g: 0.9607843, b: 0.91764706, a: 1}
+  "mudan\xE7aCor": 0
 --- !u!212 &318266248
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -798,7 +818,7 @@ Transform:
   m_LocalScale: {x: 0.4, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 1015860365}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &318266250
 BoxCollider:
@@ -828,7 +848,7 @@ GameObject:
   - component: {fileID: 431460817}
   - component: {fileID: 431460822}
   m_Layer: 0
-  m_Name: Tecla (3)
+  m_Name: Tecla6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -880,6 +900,10 @@ MonoBehaviour:
   control: {fileID: 0}
   order: 0
   teste: 0
+  tempo: 2
+  newColor: {r: 0, g: 0, b: 0, a: 0}
+  corOriginal: {r: 0.972549, g: 0.9607843, b: 0.91764706, a: 1}
+  "mudan\xE7aCor": 0
 --- !u!212 &431460820
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -942,7 +966,7 @@ Transform:
   m_LocalScale: {x: 0.4, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 1015860365}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &431460822
 BoxCollider:
@@ -986,14 +1010,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a2207cc86b2ddb499fc27c41214d8bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ordem1: 
-  ordem2: 
-  ordem3: 
   ordemTeclasCorretas: 000000000000000000000000000000000000000000000000000000000000000000000000
   ordemTeclasClicadas: 000000000000000000000000000000000000000000000000000000000000000000000000
   teclasClicadasCorretamentes: 000000000000000000
   auxOrdem: 0
-  troca: 0
+  resultado: 0
+  newColor: {r: 0, g: 0, b: 0, a: 0}
+  teclaColorida: {fileID: 0}
+  liberado: 0
 --- !u!4 &642925564
 Transform:
   m_ObjectHideFlags: 0
@@ -1124,7 +1148,7 @@ GameObject:
   - component: {fileID: 778902349}
   - component: {fileID: 778902348}
   m_Layer: 0
-  m_Name: Tecla (1)
+  m_Name: Tecla3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1176,6 +1200,10 @@ MonoBehaviour:
   control: {fileID: 0}
   order: 0
   teste: 0
+  tempo: 2
+  newColor: {r: 0, g: 0, b: 0, a: 0}
+  corOriginal: {r: 0.9725491, g: 0.9607844, b: 0.9176471, a: 1}
+  "mudan\xE7aCor": 0
 --- !u!212 &778902346
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1238,7 +1266,7 @@ Transform:
   m_LocalScale: {x: 0.4, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 1015860365}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &778902348
 BoxCollider:
@@ -1373,7 +1401,7 @@ GameObject:
   - component: {fileID: 851426314}
   - component: {fileID: 851426313}
   m_Layer: 0
-  m_Name: Tecla Preta (4)
+  m_Name: Tecla12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1425,6 +1453,10 @@ MonoBehaviour:
   control: {fileID: 0}
   order: 0
   teste: 0
+  tempo: 2
+  newColor: {r: 0, g: 0, b: 0, a: 0}
+  corOriginal: {r: 0, g: 0, b: 0, a: 0}
+  "mudan\xE7aCor": 0
 --- !u!212 &851426316
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1487,7 +1519,7 @@ Transform:
   m_LocalScale: {x: 0.4, y: 0.29939762, z: 1}
   m_Children: []
   m_Father: {fileID: 1015860365}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &867519424
 GameObject:
@@ -1586,7 +1618,7 @@ GameObject:
   - component: {fileID: 871507792}
   - component: {fileID: 871507791}
   m_Layer: 0
-  m_Name: Tecla Preta (1)
+  m_Name: Tecla4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1638,6 +1670,10 @@ MonoBehaviour:
   control: {fileID: 0}
   order: 0
   teste: 0
+  tempo: 2
+  newColor: {r: 0, g: 0, b: 0, a: 0}
+  corOriginal: {r: 0, g: 0, b: 0, a: 0}
+  "mudan\xE7aCor": 0
 --- !u!212 &871507794
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1700,7 +1736,7 @@ Transform:
   m_LocalScale: {x: 0.4, y: 0.29880002, z: 1}
   m_Children: []
   m_Father: {fileID: 1015860365}
-  m_RootOrder: 9
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1015860364
 GameObject:
@@ -1730,26 +1766,26 @@ Transform:
   m_LocalScale: {x: 1.01, y: 1, z: 1}
   m_Children:
   - {fileID: 65134809}
+  - {fileID: 258791411}
   - {fileID: 778902347}
+  - {fileID: 871507795}
   - {fileID: 318266249}
   - {fileID: 431460821}
+  - {fileID: 1910855345}
   - {fileID: 1536841231}
+  - {fileID: 175806374}
   - {fileID: 1630968784}
   - {fileID: 1733142273}
-  - {fileID: 2030694451}
-  - {fileID: 258791411}
-  - {fileID: 871507795}
-  - {fileID: 1910855345}
-  - {fileID: 175806374}
   - {fileID: 851426317}
+  - {fileID: 2030694451}
   - {fileID: 115922211}
-  - {fileID: 1329745053}
-  - {fileID: 1577757218}
   - {fileID: 1985134831}
+  - {fileID: 1329745053}
   - {fileID: 2090159627}
+  - {fileID: 1577757218}
   - {fileID: 1200255451}
-  - {fileID: 2097323625}
   - {fileID: 1646765633}
+  - {fileID: 2097323625}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1768,7 +1804,7 @@ GameObject:
   - component: {fileID: 1200255453}
   - component: {fileID: 1200255452}
   m_Layer: 0
-  m_Name: Tecla (7)
+  m_Name: Tecla19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1847,6 +1883,10 @@ MonoBehaviour:
   control: {fileID: 0}
   order: 0
   teste: 0
+  tempo: 2
+  newColor: {r: 0, g: 0, b: 0, a: 0}
+  corOriginal: {r: 0.972549, g: 0.9607843, b: 0.91764706, a: 1}
+  "mudan\xE7aCor": 0
 --- !u!212 &1200255456
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1913,7 +1953,7 @@ GameObject:
   - component: {fileID: 1329745055}
   - component: {fileID: 1329745054}
   m_Layer: 0
-  m_Name: Tecla (10)
+  m_Name: Tecla16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1931,7 +1971,7 @@ Transform:
   m_LocalScale: {x: 0.4, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 1015860365}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1329745054
 BoxCollider:
@@ -2005,6 +2045,10 @@ MonoBehaviour:
   control: {fileID: 0}
   order: 0
   teste: 0
+  tempo: 2
+  newColor: {r: 0, g: 0, b: 0, a: 0}
+  corOriginal: {r: 0.972549, g: 0.9607843, b: 0.91764706, a: 1}
+  "mudan\xE7aCor": 0
 --- !u!212 &1329745059
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2336,7 +2380,7 @@ GameObject:
   - component: {fileID: 1536841233}
   - component: {fileID: 1536841232}
   m_Layer: 0
-  m_Name: Tecla (4)
+  m_Name: Tecla8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2388,6 +2432,10 @@ MonoBehaviour:
   control: {fileID: 0}
   order: 0
   teste: 0
+  tempo: 2
+  newColor: {r: 0, g: 0, b: 0, a: 0}
+  corOriginal: {r: 0.972549, g: 0.9607843, b: 0.91764706, a: 1}
+  "mudan\xE7aCor": 0
 --- !u!212 &1536841230
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2450,7 +2498,7 @@ Transform:
   m_LocalScale: {x: 0.4, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 1015860365}
-  m_RootOrder: 4
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1536841232
 BoxCollider:
@@ -2493,7 +2541,7 @@ GameObject:
   - component: {fileID: 1577757220}
   - component: {fileID: 1577757219}
   m_Layer: 0
-  m_Name: Tecla (11)
+  m_Name: Tecla18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2511,7 +2559,7 @@ Transform:
   m_LocalScale: {x: 0.4, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 1015860365}
-  m_RootOrder: 15
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1577757219
 BoxCollider:
@@ -2572,6 +2620,10 @@ MonoBehaviour:
   control: {fileID: 0}
   order: 0
   teste: 0
+  tempo: 2
+  newColor: {r: 0, g: 0, b: 0, a: 0}
+  corOriginal: {r: 0.972549, g: 0.9607843, b: 0.91764706, a: 1}
+  "mudan\xE7aCor": 0
 --- !u!212 &1577757223
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2637,7 +2689,7 @@ GameObject:
   - component: {fileID: 1630968780}
   - component: {fileID: 1630968785}
   m_Layer: 0
-  m_Name: Tecla (5)
+  m_Name: Tecla10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2689,6 +2741,10 @@ MonoBehaviour:
   control: {fileID: 0}
   order: 0
   teste: 0
+  tempo: 2
+  newColor: {r: 0, g: 0, b: 0, a: 0}
+  corOriginal: {r: 0.972549, g: 0.9607843, b: 0.91764706, a: 1}
+  "mudan\xE7aCor": 0
 --- !u!212 &1630968783
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2751,7 +2807,7 @@ Transform:
   m_LocalScale: {x: 0.4, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 1015860365}
-  m_RootOrder: 5
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1630968785
 BoxCollider:
@@ -2780,7 +2836,7 @@ GameObject:
   - component: {fileID: 1646765635}
   - component: {fileID: 1646765634}
   m_Layer: 0
-  m_Name: Tecla Preta (5)
+  m_Name: Tecla20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2798,7 +2854,7 @@ Transform:
   m_LocalScale: {x: 0.4, y: 0.29939762, z: 1}
   m_Children: []
   m_Father: {fileID: 1015860365}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1646765634
 BoxCollider:
@@ -2846,6 +2902,10 @@ MonoBehaviour:
   control: {fileID: 0}
   order: 0
   teste: 0
+  tempo: 2
+  newColor: {r: 0, g: 0, b: 0, a: 0}
+  corOriginal: {r: 0, g: 0, b: 0, a: 0}
+  "mudan\xE7aCor": 0
 --- !u!212 &1646765637
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2911,7 +2971,7 @@ GameObject:
   - component: {fileID: 1733142269}
   - component: {fileID: 1733142274}
   m_Layer: 0
-  m_Name: Tecla (6)
+  m_Name: Tecla11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2963,6 +3023,10 @@ MonoBehaviour:
   control: {fileID: 0}
   order: 0
   teste: 0
+  tempo: 2
+  newColor: {r: 0, g: 0, b: 0, a: 0}
+  corOriginal: {r: 0.972549, g: 0.9607843, b: 0.91764706, a: 1}
+  "mudan\xE7aCor": 0
 --- !u!212 &1733142272
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3025,7 +3089,7 @@ Transform:
   m_LocalScale: {x: 0.4, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 1015860365}
-  m_RootOrder: 6
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1733142274
 BoxCollider:
@@ -3204,7 +3268,7 @@ GameObject:
   - component: {fileID: 1910855342}
   - component: {fileID: 1910855341}
   m_Layer: 0
-  m_Name: Tecla Preta (2)
+  m_Name: Tecla7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3256,6 +3320,10 @@ MonoBehaviour:
   control: {fileID: 0}
   order: 0
   teste: 0
+  tempo: 2
+  newColor: {r: 0, g: 0, b: 0, a: 0}
+  corOriginal: {r: 0, g: 0, b: 0, a: 0}
+  "mudan\xE7aCor": 0
 --- !u!212 &1910855344
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3318,7 +3386,7 @@ Transform:
   m_LocalScale: {x: 0.4, y: 0.29880002, z: 1}
   m_Children: []
   m_Father: {fileID: 1015860365}
-  m_RootOrder: 10
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1985134830
 GameObject:
@@ -3334,7 +3402,7 @@ GameObject:
   - component: {fileID: 1985134833}
   - component: {fileID: 1985134832}
   m_Layer: 0
-  m_Name: Tecla Preta (6)
+  m_Name: Tecla15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3352,7 +3420,7 @@ Transform:
   m_LocalScale: {x: 0.4, y: 0.29939762, z: 1}
   m_Children: []
   m_Father: {fileID: 1015860365}
-  m_RootOrder: 16
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1985134832
 BoxCollider:
@@ -3400,6 +3468,10 @@ MonoBehaviour:
   control: {fileID: 0}
   order: 0
   teste: 0
+  tempo: 2
+  newColor: {r: 0, g: 0, b: 0, a: 0}
+  corOriginal: {r: 0, g: 0, b: 0, a: 0}
+  "mudan\xE7aCor": 0
 --- !u!212 &1985134835
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3465,7 +3537,7 @@ GameObject:
   - component: {fileID: 2030694447}
   - component: {fileID: 2030694452}
   m_Layer: 0
-  m_Name: Tecla (8)
+  m_Name: Tecla13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3517,6 +3589,10 @@ MonoBehaviour:
   control: {fileID: 0}
   order: 0
   teste: 0
+  tempo: 2
+  newColor: {r: 0, g: 0, b: 0, a: 0}
+  corOriginal: {r: 0.972549, g: 0.9607843, b: 0.91764706, a: 1}
+  "mudan\xE7aCor": 0
 --- !u!212 &2030694450
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3579,7 +3655,7 @@ Transform:
   m_LocalScale: {x: 0.4, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 1015860365}
-  m_RootOrder: 7
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &2030694452
 BoxCollider:
@@ -3608,7 +3684,7 @@ GameObject:
   - component: {fileID: 2090159629}
   - component: {fileID: 2090159628}
   m_Layer: 0
-  m_Name: Tecla Preta (7)
+  m_Name: Tecla17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3626,7 +3702,7 @@ Transform:
   m_LocalScale: {x: 0.4, y: 0.29940003, z: 1}
   m_Children: []
   m_Father: {fileID: 1015860365}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &2090159628
 BoxCollider:
@@ -3674,6 +3750,10 @@ MonoBehaviour:
   control: {fileID: 0}
   order: 0
   teste: 0
+  tempo: 2
+  newColor: {r: 0, g: 0, b: 0, a: 0}
+  corOriginal: {r: 0, g: 0, b: 0, a: 0}
+  "mudan\xE7aCor": 0
 --- !u!212 &2090159631
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3739,7 +3819,7 @@ GameObject:
   - component: {fileID: 2097323627}
   - component: {fileID: 2097323626}
   m_Layer: 0
-  m_Name: Tecla (12)
+  m_Name: Tecla21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3757,7 +3837,7 @@ Transform:
   m_LocalScale: {x: 0.4, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 1015860365}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &2097323626
 BoxCollider:
@@ -3818,6 +3898,10 @@ MonoBehaviour:
   control: {fileID: 0}
   order: 0
   teste: 0
+  tempo: 2
+  newColor: {r: 0, g: 0, b: 0, a: 0}
+  corOriginal: {r: 0.972549, g: 0.9607843, b: 0.91764706, a: 1}
+  "mudan\xE7aCor": 0
 --- !u!212 &2097323630
 SpriteRenderer:
   m_ObjectHideFlags: 0
