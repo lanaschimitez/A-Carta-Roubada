@@ -11,17 +11,22 @@ public class LightsControl : MonoBehaviour
     public int order;
     public Color corOriginal;
     public bool mudançaCor;
-    private IEnumerator coresCoroutine;
+    public AudioSource audioData;
+    public bool mudarCor;
 
     RaycastHit hit; //Armazena informação que pegou o objeto
     void Start()
     {
+        audioData = GetComponent<AudioSource>();
+        audioData.Pause();
         mudançaCor = true;
         objetoControle = GameObject.Find("LightsID");
+        mudarCor = false;
     }
     void Update()
     {
-        if (objetoControle.GetComponent<LightsID>().liberado && order < 9)
+        mudarCor = false;
+        if (objetoControle.GetComponent<LightsID>().liberado && order < 7)
         {
             if (mudançaCor)
             {
@@ -35,25 +40,24 @@ public class LightsControl : MonoBehaviour
                 {
                     game = hit.collider.gameObject; //mudar para varios objetos
                     objetoControle.GetComponent<LightsID>().ordemTeclasClicadas[order] = game.GetComponent<LightsControl>().idButton; // vai passar para o lightsID a tecla clicada
-                    coresCoroutine = CorTecla(2.0f, game);
-                    StartCoroutine(coresCoroutine);
+                    game.GetComponent<SpriteRenderer>().color = Color.red;
+                    game.GetComponent<LightsControl>().mudarCor = true;
+                    game.GetComponent<LightsControl>().Sound();
                 }
             }
             order = objetoControle.GetComponent<LightsID>().auxOrdem;
         }
     }
 
-    IEnumerator CorTecla(float waitTime, GameObject game)
+    public void MudançaCor()
     {
-        while (true)
-        {
-            waitTime -= Time.deltaTime;
-            game.GetComponent<SpriteRenderer>().color = Color.red;
-            if (waitTime < 0.1)
-            {
-                game.GetComponent<SpriteRenderer>().color = game.GetComponent<LightsControl>().corOriginal;
-            }
-            yield return null;
-        }
+        this.gameObject.GetComponent<SpriteRenderer>().color = corOriginal;
+        mudançaCor = false;
     }
+
+    public void Sound()
+    {
+        audioData.Play();
+    }
+
 }

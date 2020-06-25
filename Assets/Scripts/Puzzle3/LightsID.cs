@@ -3,19 +3,21 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LightsID : MonoBehaviour
 {
     private int[] ordem1;
     private int[] ordem2;
     private int[] ordem3;
-    private int[] ordemTeclasCorretas = new int[9];
-    public int[] ordemTeclasClicadas = new int[9];
-    private bool[] teclasClicadasCorretamentes = new bool[9];
+    public int[] ordemTeclasCorretas = new int[7];
+    public int[] ordemTeclasClicadas = new int[7];
+    public bool[] teclasClicadasCorretamentes = new bool[7];
     public int auxOrdem;
     public bool resultado;
     private GameObject teclaColorida;
-    private int k = 0;
+    public int k = 0; //controle de posicao
+    private bool finalCores = false; //controle de rotinas feitas
     private IEnumerator coroutine;
     public bool liberado;
 
@@ -23,11 +25,11 @@ public class LightsID : MonoBehaviour
     {
         liberado = false;
         auxOrdem = 0;
-        ordem1 = new int[9] { 3, 5, 12, 13, 7, 1, 15, 20, 6 };
-        ordem2 = new int[9] { 2, 20, 21, 8, 11, 4, 17, 5, 19 };
-        ordem3 = new int[9] { 9, 10, 14, 16, 18, 7, 2, 21, 16 };
+        ordem1 = new int[7] { 3, 5, 12, 13, 1, 15, 6 };
+        ordem2 = new int[7] { 20, 21, 8, 11, 4, 17, 19 };
+        ordem3 = new int[7] { 9, 10, 14, 16, 18, 7, 2 };
 
-        for (int i = 0; i < 9; i++)
+        for (int i = 0; i < 7; i++)
         {
             ordemTeclasClicadas[i] = 0;
         }
@@ -44,31 +46,31 @@ public class LightsID : MonoBehaviour
         {
             ordemTeclasCorretas = ordem3;
         }
-        coroutine = Luzes(3.0f);
+        coroutine = Luzes(1.0f);
         StartCoroutine(coroutine);
     }
 
     private void Update()
     {
-        if (k > 8)
+        if (finalCores)
         {
             StopCoroutine(coroutine);
             liberado = true;
         }
         if (liberado)
         {
-            if (auxOrdem < 9 && ordemTeclasClicadas[auxOrdem] != 0)
+            if (auxOrdem < 7 && ordemTeclasClicadas[auxOrdem] != 0)
             {
                 auxOrdem++;
             }
-            if (ordemTeclasClicadas[8] != 0) //verificar se todos os botoes foram apertados
+            if (ordemTeclasClicadas[6] != 0) //verificar se todos os botoes foram apertados
             {
                 liberado = false;
-                for (int i = 0; i < 9; i++)
+                for (int i = 0; i < 7; i++)
                 {
                     teclasClicadasCorretamentes[i] = (ordemTeclasCorretas[i] == ordemTeclasClicadas[i]);
                 }
-                for (int i = 0; i < 9; i++)
+                for (int i = 0; i < 7; i++)
                 {
                     if (teclasClicadasCorretamentes[i])
                     {
@@ -80,16 +82,45 @@ public class LightsID : MonoBehaviour
                         break;
                     }
                 }
-                Debug.Log((resultado) ? "Ganhou" : "Perdeu"); //iniciar nova cena ou inciar Restart
+                if (resultado)
+                {
+
+                    SceneManager.LoadScene("Sala Principal");
+                }
+                else
+                {
+                    Invoke("Teste", 2.0f);
+                }
             }
+        }
+    }
+
+    public void Teste()
+    {
+        float temp = 120.0f;
+        while (temp > 0.2f)
+        {
+            temp -= Time.deltaTime;
+        }
+        if (temp < 0.2)
+        {
+            SceneManager.LoadScene("Puzzle 3 - Luzes");
         }
     }
 
     public void Restart()
     {
-        StopCoroutine(coroutine);
-        k = 0;
+        teclaColorida.GetComponent<LightsControl>().mudançaCor = true;
+        teclaColorida.GetComponent<LightsControl>().MudançaCor();
         liberado = false;
+        Debug.Log("Parou coroutine");
+        StopCoroutine(coroutine);
+        auxOrdem = 0;
+        teclaColorida.GetComponent<LightsControl>().mudançaCor = true;
+        finalCores = false;
+        Array.Clear(ordemTeclasClicadas, 0, 7);
+        k = 0;
+        Debug.Log("Iniciou coroutine");
         StartCoroutine(coroutine);
     }
 
@@ -97,16 +128,25 @@ public class LightsID : MonoBehaviour
     {
         while (true)
         {
-            int aux;
-            string auxString;
-            aux = ordemTeclasCorretas[k];
-            auxString = aux.ToString();
-            String nomeTecla = "Tecla";
-            nomeTecla = String.Concat(nomeTecla, auxString);
-            teclaColorida = GameObject.Find(nomeTecla);
-            teclaColorida.GetComponent<SpriteRenderer>().color = Color.cyan;
+            if (k < 7)
+            {
+                liberado = false;
+                int aux;
+                string auxString;
+                aux = ordemTeclasCorretas[k];
+                auxString = aux.ToString();
+                String nomeTecla = "Tecla";
+                nomeTecla = String.Concat(nomeTecla, auxString);
+                teclaColorida = GameObject.Find(nomeTecla);
+                teclaColorida.GetComponent<SpriteRenderer>().color = Color.cyan;
+                teclaColorida.GetComponent<LightsControl>().mudançaCor = true;
+                teclaColorida.GetComponent<AudioSource>().Play();
+            }
+            else
+            {
+                finalCores = true;
+            }
             k++;
-            teclaColorida.GetComponent<LightsControl>().mudançaCor = true;
             yield return new WaitForSeconds(waitTime);
         }
 
