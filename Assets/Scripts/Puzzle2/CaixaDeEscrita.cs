@@ -10,38 +10,59 @@ public class CaixaDeEscrita : MonoBehaviour
     public char[] enigmaArray;
     public string resultado;
     public string enigma;
+    public GameObject _livro1;
+    public GameObject _livro2;
+    public GameObject _livro3;
+    private GameObject livro;
+    public string livro1 = "o gato preto";
+    public string livro2 = "a mascara da morte escarlate";
+    public string livro3 = "os assassinatos da rua morgue";
+    public Vector3 posicao = new Vector3(-4.66f, 0.75f, 0f);
+    public int aux;
 
     //public GameObject fire;
 
     void Start()
     {
-        enigmaArray = new char[] { 'a', 'b' }; //colocar para pegar em uma base de dados
-        enigma = string.Join("", enigmaArray); //transformando a array em string antes de misturar
-
-        for (int i=0; i>0 ; i++)
+        livro1 = "o gato preto";
+        livro2 = "a mascara da morte escarlate";
+        livro3 = "os assassinatos da rua morgue";
+        aux = Random.Range(1, 3);
+        if(aux == 1)
         {
-            //misturar as letras
+            livro = _livro1;
+            enigma = livro1;
         }
-        resultado = string.Join("", enigmaArray); //transformando a array em string depois de misturar
+        else if(aux == 2)
+        {
+            livro = _livro2;
+            enigma = livro2;
+        }
+        else if(aux == 3)
+        {
+            livro = _livro3;
+            enigma = livro3;
+        }
+        Instantiate(livro, posicao, Quaternion.identity);
         var input = gameObject.GetComponent<InputField>(); //recebe o que o usuario digitar
         input.onEndEdit.AddListener(SubmitName);
-
     }
 
     public void Update()
     {
         //Teste para voltar a sala principal
-        if(Input.touchCount > 1)
+        if (Input.touchCount > 1)
         {
             PlayerPrefs.SetInt("fire_on", 1);
-            SceneManager.LoadScene("Sala Principal");            
+            SceneManager.LoadScene("Sala Principal");
         }
     }
     private void SubmitName(string arg0)
     {
-        Debug.Log(arg0);
         arg0 = arg0.ToLower(); //tranformando a string em letras minusculas
-        Debug.Log(arg0);
-        Debug.Log("    Is str1 equal to str2?: {0}" + string.Equals(arg0, enigma)); //verificar se o usuario acertou
+        if(string.Equals(arg0, enigma))
+        {
+            SceneManager.LoadScene("Sala Principal");
+        }
     }
 }

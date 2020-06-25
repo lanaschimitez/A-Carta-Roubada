@@ -79,6 +79,8 @@
     <Compile Include="Assets\Scripts\Puzzle1\Puzzle1Click.cs" />
     <Compile Include="Assets\Scripts\Puzzle1\Puzzle1Touch.cs" />
     <Compile Include="Assets\Scripts\Puzzle2\CaixaDeEscrita.cs" />
+    <Compile Include="Assets\Scripts\Puzzle2\GetPHP.cs" />
+    <Compile Include="Assets\Scripts\Puzzle2\Player.cs" />
     <Compile Include="Assets\Scripts\Puzzle2\TextoEnigma.cs" />
     <Compile Include="Assets\Scripts\Puzzle3\LightsControl.cs" />
     <Compile Include="Assets\Scripts\Puzzle3\LightsID.cs" />
