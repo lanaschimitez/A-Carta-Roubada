@@ -18,7 +18,6 @@ public class LightsControl : MonoBehaviour
     void Start()
     {
         audioData = GetComponent<AudioSource>();
-        audioData.Pause();
         mudançaCor = true;
         objetoControle = GameObject.Find("LightsID");
         mudarCor = false;

@@ -10,13 +10,13 @@ public class LightsID : MonoBehaviour
     private int[] ordem1;
     private int[] ordem2;
     private int[] ordem3;
-    public int[] ordemTeclasCorretas = new int[7];
+    private int[] ordemTeclasCorretas = new int[7];
     public int[] ordemTeclasClicadas = new int[7];
-    public bool[] teclasClicadasCorretamentes = new bool[7];
+    private bool[] teclasClicadasCorretamentes = new bool[7];
     public int auxOrdem;
-    public bool resultado;
+    private bool resultado;
     private GameObject teclaColorida;
-    public int k = 0; //controle de posicao
+    private int k = 0; //controle de posicao
     private bool finalCores = false; //controle de rotinas feitas
     private IEnumerator coroutine;
     public bool liberado;
@@ -89,41 +89,16 @@ public class LightsID : MonoBehaviour
                 }
                 else
                 {
-                    Invoke("Teste", 2.0f);
+                    Invoke("Reiniciar", 2.0f);
                 }
             }
         }
     }
 
-    public void Teste()
+    public void Reiniciar()
     {
-        float temp = 120.0f;
-        while (temp > 0.2f)
-        {
-            temp -= Time.deltaTime;
-        }
-        if (temp < 0.2)
-        {
-            SceneManager.LoadScene("Puzzle 3 - Luzes");
-        }
+        SceneManager.LoadScene("Puzzle 3 - Luzes");
     }
-
-    public void Restart()
-    {
-        teclaColorida.GetComponent<LightsControl>().mudançaCor = true;
-        teclaColorida.GetComponent<LightsControl>().MudançaCor();
-        liberado = false;
-        Debug.Log("Parou coroutine");
-        StopCoroutine(coroutine);
-        auxOrdem = 0;
-        teclaColorida.GetComponent<LightsControl>().mudançaCor = true;
-        finalCores = false;
-        Array.Clear(ordemTeclasClicadas, 0, 7);
-        k = 0;
-        Debug.Log("Iniciou coroutine");
-        StartCoroutine(coroutine);
-    }
-
     private IEnumerator Luzes(float waitTime)
     {
         while (true)
@@ -138,9 +113,9 @@ public class LightsID : MonoBehaviour
                 String nomeTecla = "Tecla";
                 nomeTecla = String.Concat(nomeTecla, auxString);
                 teclaColorida = GameObject.Find(nomeTecla);
+                teclaColorida.GetComponent<AudioSource>().Play();
                 teclaColorida.GetComponent<SpriteRenderer>().color = Color.cyan;
                 teclaColorida.GetComponent<LightsControl>().mudançaCor = true;
-                teclaColorida.GetComponent<AudioSource>().Play();
             }
             else
             {
@@ -149,6 +124,5 @@ public class LightsID : MonoBehaviour
             k++;
             yield return new WaitForSeconds(waitTime);
         }
-
     }
 }
