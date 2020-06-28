@@ -1,3 +1,5 @@
+Baseado no conto "A Carta Roubada" de Edgar Alan Poe 1844
+
 t:Game Designers
 Evaldo Araujo
 Lana Eduarda Schimitez
@@ -13,11 +15,19 @@ t:Artists
 Nathan Coliado Santana
 Rafael Cabral Lee
 
-t:UI Artist
+t:Data Integration
+Lana Eduarda Schimitez
+Marcelo Augusto Danelon
+
+t:UI | UX Artist
 Marcelo Augusto Danelon
 
 t:Tech Artists
-Lana Schimitez
+Lana Eduarda Schimitez
+Marcelo Augusto Danelon
+Nathan Coliado Santana
+
+t:Animations
 Marcelo Augusto Danelon
 Nathan Coliado Santana
 
@@ -27,6 +37,14 @@ Evaldo Araujo
 t:Sound Designer
 Evaldo Araujo
 Nathan Coliado Santana
+
+t:Tester Mobile
+Marcelo Augusto Danelon
+
+t:Localization
+Evaldo Araujo
+Lana Eduarda Schimitez
+Marcelo Augusto Danelon
 
 Assets Unity
 PixelWhat
@@ -63,3 +81,9 @@ Studio New Punch
 https://assetstore.unity.com/packages/3d/characters/humanoids/man-in-a-suit-51662
 
 
+t:Special Thanks
+Cleberson Eugênio Forte
+Gustavo Carvalho Gomes De Abreu
+Luciene Maria Garbuio Castello Branco
+Paula Da Fonte Sanches
+Sílvia Aparecida José E Silva

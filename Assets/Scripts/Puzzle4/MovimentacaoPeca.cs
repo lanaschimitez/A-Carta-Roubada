@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System;
+using UnityEngine.SceneManagement;
 //using UnityEngine.UI;
 //using UnityEngine.EventSystems;
 
@@ -77,6 +78,14 @@ public class MovimentacaoPeca : MonoBehaviour
                     Instantiate(_CartaFinal, transform.position, Quaternion.identity);
                 final = true;
             }
+            PlayerPrefs.SetInt("fire_on", 1);
+            PlayerPrefs.SetInt("animation1_on", 1);
+            Invoke("fimDeJogo", 3);
         }
+    }
+
+    public void fimDeJogo()
+    {
+        SceneManager.LoadScene("Sala Principal");
     }
 }
