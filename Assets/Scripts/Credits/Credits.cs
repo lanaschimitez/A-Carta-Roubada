@@ -3,15 +3,19 @@ using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Credits : MonoBehaviour
 {
     public TextAsset m_TextFile;
     public Text m_TextUI;
+    public GameObject movimentacaoTexto;
     public int m_RoleSize = 36;
     public int m_PersonSize = 22;
     public int m_Space = 40;
     public float m_Speed = 2.0f;
+    public GameObject buttoExit;
+    public Text exitTexto;
 
     public Canvas m_Canvas;
     private void Start()
@@ -36,10 +40,31 @@ public class Credits : MonoBehaviour
         }
         m_TextUI.text = builder.ToString();
         Canvas.ForceUpdateCanvases();
+
+        if (PlayerPrefs.GetInt("jogo_ingles") == 1)
+        {
+            exitTexto.text = "Exit";
+        }
     }
 
     private void Update()
     {
         transform.Translate(Vector3.up * m_Speed * Time.deltaTime);
+
+        if (movimentacaoTexto.gameObject.transform.position.y > 1065)
+        {
+            m_Speed = 0;
+            buttoExit.SetActive(true);
+        }
+        if (PlayerPrefs.GetInt("credito_menu") == 1)
+        {
+            buttoExit.SetActive(true);
+            PlayerPrefs.SetInt("credito_menu", 0);
+        }
+    }
+
+    public void exit()
+    {
+        SceneManager.LoadScene("Menu Principal");
     }
 }

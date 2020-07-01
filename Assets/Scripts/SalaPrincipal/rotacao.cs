@@ -5,8 +5,7 @@ using UnityEngine;
 public class rotacao : MonoBehaviour
 {
     float velocidadeRotacao = 5;
-    float x1=10;
-    float y1 = 10;
+    float x1 = 10;
 
     void Update()
     {

@@ -63,108 +63,91 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Animations\AnimacaoInicio\Animacao1.cs" />
+    <Compile Include="Assets\AnimacaoInicio\Animacao1.cs" />
     <Compile Include="Assets\Joystick\Examples\JoystickSetterExample.cs" />
     <Compile Include="Assets\Joystick\Scripts\Base\Joystick.cs" />
     <Compile Include="Assets\Joystick\Scripts\Joysticks\DynamicJoystick.cs" />
     <Compile Include="Assets\Joystick\Scripts\Joysticks\FixedJoystick.cs" />
     <Compile Include="Assets\Joystick\Scripts\Joysticks\FloatingJoystick.cs" />
     <Compile Include="Assets\Joystick\Scripts\Joysticks\VariableJoystick.cs" />
-    <Compile Include="Assets\Scripts\Animacao Inicial\controlAnimacao.cs" />
-    <Compile Include="Assets\Scripts\Cofre\Botao.cs" />
+    <Compile Include="Assets\Scripts\Cofre\ControlCofre.cs" />
     <Compile Include="Assets\Scripts\Credits\Credits.cs" />
+    <Compile Include="Assets\Scripts\Final\FinalScript.cs" />
+    <Compile Include="Assets\Scripts\Idioma\controlIdioma.cs" />
     <Compile Include="Assets\Scripts\Menu Principal\LOAD.cs" />
     <Compile Include="Assets\Scripts\Menu Principal\controlMenu.cs" />
-    <Compile Include="Assets\Scripts\Puzzle1\Puzzle1.cs" />
-    <Compile Include="Assets\Scripts\Puzzle1\Puzzle1Click.cs" />
-    <Compile Include="Assets\Scripts\Puzzle1\Puzzle1Touch.cs" />
-    <Compile Include="Assets\Scripts\Puzzle2\CaixaDeEscrita.cs" />
-    <Compile Include="Assets\Scripts\Puzzle2\GetPHP.cs" />
-    <Compile Include="Assets\Scripts\Puzzle2\Player.cs" />
-    <Compile Include="Assets\Scripts\Puzzle2\TextoEnigma.cs" />
-    <Compile Include="Assets\Scripts\Puzzle3\LightsControl.cs" />
-    <Compile Include="Assets\Scripts\Puzzle3\LightsID.cs" />
-    <Compile Include="Assets\Scripts\Puzzle3\Teclas\Tecla1.cs" />
-    <Compile Include="Assets\Scripts\Puzzle3\Teclas\Tecla10.cs" />
-    <Compile Include="Assets\Scripts\Puzzle3\Teclas\Tecla11.cs" />
-    <Compile Include="Assets\Scripts\Puzzle3\Teclas\Tecla12.cs" />
-    <Compile Include="Assets\Scripts\Puzzle3\Teclas\Tecla13.cs" />
-    <Compile Include="Assets\Scripts\Puzzle3\Teclas\Tecla14.cs" />
-    <Compile Include="Assets\Scripts\Puzzle3\Teclas\Tecla15.cs" />
-    <Compile Include="Assets\Scripts\Puzzle3\Teclas\Tecla16.cs" />
-    <Compile Include="Assets\Scripts\Puzzle3\Teclas\Tecla17.cs" />
-    <Compile Include="Assets\Scripts\Puzzle3\Teclas\Tecla18.cs" />
-    <Compile Include="Assets\Scripts\Puzzle3\Teclas\Tecla19.cs" />
-    <Compile Include="Assets\Scripts\Puzzle3\Teclas\Tecla2.cs" />
-    <Compile Include="Assets\Scripts\Puzzle3\Teclas\Tecla20.cs" />
-    <Compile Include="Assets\Scripts\Puzzle3\Teclas\Tecla21.cs" />
-    <Compile Include="Assets\Scripts\Puzzle3\Teclas\Tecla3.cs" />
-    <Compile Include="Assets\Scripts\Puzzle3\Teclas\Tecla4.cs" />
-    <Compile Include="Assets\Scripts\Puzzle3\Teclas\Tecla5.cs" />
-    <Compile Include="Assets\Scripts\Puzzle3\Teclas\Tecla6.cs" />
-    <Compile Include="Assets\Scripts\Puzzle3\Teclas\Tecla7.cs" />
-    <Compile Include="Assets\Scripts\Puzzle3\Teclas\Tecla8.cs" />
-    <Compile Include="Assets\Scripts\Puzzle3\Teclas\Tecla9.cs" />
+    <Compile Include="Assets\Scripts\Placar\controlPlacar.cs" />
+    <Compile Include="Assets\Scripts\Puzzle1\ControlPuzzle1.cs" />
+    <Compile Include="Assets\Scripts\Puzzle1\LightsControl.cs" />
+    <Compile Include="Assets\Scripts\Puzzle1\LightsID.cs" />
+    <Compile Include="Assets\Scripts\Puzzle2\JoystickPlayerPuzzle.cs" />
+    <Compile Include="Assets\Scripts\Puzzle2\Puzzle2.cs" />
+    <Compile Include="Assets\Scripts\Puzzle2\Puzzle2Click.cs" />
+    <Compile Include="Assets\Scripts\Puzzle2\Puzzle2Touch.cs" />
+    <Compile Include="Assets\Scripts\Puzzle3\CaixaDeEscrita.cs" />
+    <Compile Include="Assets\Scripts\Puzzle3\ControlCifra.cs" />
+    <Compile Include="Assets\Scripts\Puzzle3\ControlPuzzle3.cs" />
+    <Compile Include="Assets\Scripts\Puzzle3\Player.cs" />
+    <Compile Include="Assets\Scripts\Puzzle4\ControlPuzzle4.cs" />
+    <Compile Include="Assets\Scripts\Puzzle4\LugarPeca.cs" />
     <Compile Include="Assets\Scripts\Puzzle4\MovimentacaoPeca.cs" />
     <Compile Include="Assets\Scripts\Puzzle4\OrdemPedaco.cs" />
+    <Compile Include="Assets\Scripts\SalaPrincipal\JoystickDynamicSala.cs" />
     <Compile Include="Assets\Scripts\SalaPrincipal\JoystickPlayer.cs" />
     <Compile Include="Assets\Scripts\SalaPrincipal\cameraBehaviour.cs" />
     <Compile Include="Assets\Scripts\SalaPrincipal\controlDicas.cs" />
     <Compile Include="Assets\Scripts\SalaPrincipal\controlGame.cs" />
-    <Compile Include="Assets\Scripts\SalaPrincipal\controlPause.cs" />
-    <Compile Include="Assets\Scripts\SalaPrincipal\desafio1.cs" />
-    <Compile Include="Assets\Scripts\SalaPrincipal\desafio2.cs" />
     <Compile Include="Assets\Scripts\SalaPrincipal\desafio_final.cs" />
-    <Compile Include="Assets\Scripts\SalaPrincipal\parede1.cs" />
-    <Compile Include="Assets\Scripts\SalaPrincipal\parede2.cs" />
-    <Compile Include="Assets\Scripts\SalaPrincipal\parede3.cs" />
-    <Compile Include="Assets\Scripts\SalaPrincipal\parede4.cs" />
+    <Compile Include="Assets\Scripts\SalaPrincipal\puzzle1.cs" />
+    <Compile Include="Assets\Scripts\SalaPrincipal\puzzle2.cs" />
+    <Compile Include="Assets\Scripts\SalaPrincipal\puzzle3.cs" />
+    <Compile Include="Assets\Scripts\SalaPrincipal\puzzle4.cs" />
     <Compile Include="Assets\Scripts\SalaPrincipal\rotacao.cs" />
     <None Include="Assets\Resources\Credits.txt" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/LanaEduardaSchimitez/Documents/GitHub/A-Carta-Roubada/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/LanaEduardaSchimitez/Downloads/Backup21-A-Carta-Roubada/A-Carta-Roubada/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProGrids">
-      <HintPath>C:/Users/LanaEduardaSchimitez/Documents/GitHub/A-Carta-Roubada/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
+      <HintPath>C:/Users/LanaEduardaSchimitez/Downloads/Backup21-A-Carta-Roubada/A-Carta-Roubada/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/LanaEduardaSchimitez/Documents/GitHub/A-Carta-Roubada/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/LanaEduardaSchimitez/Downloads/Backup21-A-Carta-Roubada/A-Carta-Roubada/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProGrids.Editor">
-      <HintPath>C:/Users/LanaEduardaSchimitez/Documents/GitHub/A-Carta-Roubada/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
+      <HintPath>C:/Users/LanaEduardaSchimitez/Downloads/Backup21-A-Carta-Roubada/A-Carta-Roubada/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/LanaEduardaSchimitez/Documents/GitHub/A-Carta-Roubada/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/LanaEduardaSchimitez/Downloads/Backup21-A-Carta-Roubada/A-Carta-Roubada/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/LanaEduardaSchimitez/Documents/GitHub/A-Carta-Roubada/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/LanaEduardaSchimitez/Downloads/Backup21-A-Carta-Roubada/A-Carta-Roubada/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/LanaEduardaSchimitez/Documents/GitHub/A-Carta-Roubada/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/LanaEduardaSchimitez/Downloads/Backup21-A-Carta-Roubada/A-Carta-Roubada/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/LanaEduardaSchimitez/Documents/GitHub/A-Carta-Roubada/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/LanaEduardaSchimitez/Downloads/Backup21-A-Carta-Roubada/A-Carta-Roubada/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>C:/Users/LanaEduardaSchimitez/Documents/GitHub/A-Carta-Roubada/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+      <HintPath>C:/Users/LanaEduardaSchimitez/Downloads/Backup21-A-Carta-Roubada/A-Carta-Roubada/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/LanaEduardaSchimitez/Documents/GitHub/A-Carta-Roubada/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/LanaEduardaSchimitez/Downloads/Backup21-A-Carta-Roubada/A-Carta-Roubada/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>C:/Users/LanaEduardaSchimitez/Documents/GitHub/A-Carta-Roubada/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>C:/Users/LanaEduardaSchimitez/Downloads/Backup21-A-Carta-Roubada/A-Carta-Roubada/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>C:/Users/LanaEduardaSchimitez/Documents/GitHub/A-Carta-Roubada/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+      <HintPath>C:/Users/LanaEduardaSchimitez/Downloads/Backup21-A-Carta-Roubada/A-Carta-Roubada/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>C:/Users/LanaEduardaSchimitez/Documents/GitHub/A-Carta-Roubada/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>C:/Users/LanaEduardaSchimitez/Downloads/Backup21-A-Carta-Roubada/A-Carta-Roubada/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/LanaEduardaSchimitez/Documents/GitHub/A-Carta-Roubada/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/LanaEduardaSchimitez/Downloads/Backup21-A-Carta-Roubada/A-Carta-Roubada/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/LanaEduardaSchimitez/Documents/GitHub/A-Carta-Roubada/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/LanaEduardaSchimitez/Downloads/Backup21-A-Carta-Roubada/A-Carta-Roubada/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.0f6/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

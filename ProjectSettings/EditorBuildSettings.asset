@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Idioma.unity
+    guid: 5fd0a5c7c2b953347b8fcd931f55d5b5
+  - enabled: 1
     path: Assets/Scenes/Menu Principal.unity
     guid: b3acbab98cebde942bd29df70fa4414b
   - enabled: 1
@@ -16,8 +19,32 @@ EditorBuildSettings:
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/Puzzle 1.unity
-    guid: c00b9f4902be4ee4d8ebcc88f2d13be9
+    guid: d641af58dca927c4c9c73b9afee2999d
   - enabled: 1
     path: Assets/Scenes/Puzzle 2.unity
-    guid: 2924e39a0852913439cc48438af8bcda
+    guid: 2e2613226ede29a40a8e300fb975ef40
+  - enabled: 1
+    path: Assets/Scenes/Puzzle 3.unity
+    guid: a5d9f6bcf54cce04e8e2391e51913375
+  - enabled: 1
+    path: Assets/Scenes/Puzzle 4.unity
+    guid: 02745c3719cacbc42a74a2efb03eca19
+  - enabled: 1
+    path: Assets/Scenes/Finais/CenaDeEscolha.unity
+    guid: 42339f50688f5ea4aaaf917274f6dab0
+  - enabled: 1
+    path: Assets/Scenes/Finais/FinalDevolverACarta.unity
+    guid: 0c2bfad7fb0044e46916024da183a957
+  - enabled: 1
+    path: Assets/Scenes/Finais/FinalLerCarta.unity
+    guid: 333b0390334ff604dbc8ff5d3cb97c07
+  - enabled: 1
+    path: Assets/Scenes/Finais/FinalUsarEstePoder.unity
+    guid: 65ed356412794774eacbb181e40db252
+  - enabled: 1
+    path: Assets/Scenes/Placar.unity
+    guid: d2c799579cd984b468980752b6ee9441
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 5a5db6a7ff23f024e8649e0692478249
   m_configObjects: {}
