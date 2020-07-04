@@ -72,15 +72,18 @@ public class controlDicas : MonoBehaviour
     public void abreDicas()
     {
         panel.SetActive(true);
-        joystickMovimentacao.SetActive(false);
-        joystickCamera.SetActive(false);
-        Camera.GetComponent<JoystickDynamicSala>().enabled = false;
+        //joystickMovimentacao.SetActive(false);
+        //joystickCamera.SetActive(false);
+        Camera.GetComponent<rotacao>().velocidadeRotacao = 0;
+        Camera.GetComponent<rotacao>().velocidadeAndar = 0;
     }
     public void fechaDicas()
     {
         panel.SetActive(false);
-        joystickMovimentacao.SetActive(true);
-        joystickCamera.SetActive(true);
-        Camera.GetComponent<JoystickDynamicSala>().enabled = true;
+        //joystickMovimentacao.SetActive(true);
+        //joystickCamera.SetActive(true);
+        //Camera.GetComponent<JoystickDynamicSala>().enabled = true;
+        Camera.GetComponent<rotacao>().velocidadeRotacao = 50;
+        Camera.GetComponent<rotacao>().velocidadeAndar = 25;
     }
 }

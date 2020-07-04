@@ -7379,18 +7379,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 360976228}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &381217066 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2929252283123773951, guid: aaa2c939c0359ac4dbce3f49e8b90252,
-    type: 3}
-  m_PrefabInstance: {fileID: 907746667}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1176685134}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &381217067 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
@@ -7506,6 +7494,11 @@ PrefabInstance:
     - target: {fileID: 4177046354630628, guid: 9d012b73caba62246906034d78994c42, type: 3}
       propertyPath: m_LocalScale.z
       value: 4.027493
+      objectReference: {fileID: 0}
+    - target: {fileID: 65455356704917402, guid: 9d012b73caba62246906034d78994c42,
+        type: 3}
+      propertyPath: m_Material
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 108546126138138148, guid: 9d012b73caba62246906034d78994c42,
         type: 3}
@@ -15309,18 +15302,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 2048927481}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &901131521 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8135886326569738823, guid: 56fae09712773584fb63896d473a98ee,
-    type: 3}
-  m_PrefabInstance: {fileID: 2048927481}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1363824377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba0d0e7a039f526499c356a3c5cd6d3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &907746667
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15751,6 +15732,12 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 3.2219946
       objectReference: {fileID: 0}
+    - target: {fileID: 65455356704917402, guid: 9d012b73caba62246906034d78994c42,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 4d0392cce0c0fc14bb773ad45561774f,
+        type: 2}
     - target: {fileID: 108546126138138148, guid: 9d012b73caba62246906034d78994c42,
         type: 3}
       propertyPath: m_BoundingSphereOverride.x
@@ -15806,7 +15793,7 @@ GameObject:
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
   - component: {fileID: 963194231}
-  - component: {fileID: 963194232}
+  - component: {fileID: 963194230}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -15894,6 +15881,23 @@ MonoBehaviour:
   ObjASeguir: {fileID: 1414444837}
   fade: {fileID: 1061545839}
   cameraInicial: {fileID: 0}
+--- !u!114 &963194230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9621402ca353fa4588e1daf3c51e1f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidadeRotacao: 50
+  velocidadeAndar: 25
+  rb: {fileID: 1414444839}
+  personagem: {fileID: 1414444833}
+  f1: 0
 --- !u!95 &963194231
 Animator:
   serializedVersion: 3
@@ -15913,22 +15917,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &963194232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 089bf95a924e0604f9ebaceb0fe2f235, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 70
-  DynamicJoystick: {fileID: 901131521}
-  horizontal: 0
-  vertical: 0
 --- !u!1 &983505786 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1627497564551428, guid: eded3844e29c2ec40bc278e2cbd31279,
@@ -32216,7 +32204,6 @@ GameObject:
   - component: {fileID: 1414444839}
   - component: {fileID: 1414444834}
   - component: {fileID: 1414444840}
-  - component: {fileID: 1414444838}
   - component: {fileID: 1414444836}
   m_Layer: 0
   m_Name: personagem
@@ -32388,24 +32375,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1414444838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1414444833}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a37d705c8e9115e439ec799186182634, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 20
-  FixedJoystick: {fileID: 381217066}
-  rb: {fileID: 1414444839}
-  Camera: {fileID: 963194225}
-  f1: 0
-  f2: 0
 --- !u!54 &1414444839
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -32439,8 +32408,8 @@ MonoBehaviour:
   imagem: {fileID: 1541522772}
   textTempo: {fileID: 1750958148}
   gameTimer: 601
-  joystickMovimentacao: {fileID: 1176685134}
-  joystickCamera: {fileID: 1363824377}
+  joystickMovimentacao: {fileID: 0}
+  joystickCamera: {fileID: 0}
   tela_cofre: {fileID: 590969533}
   pause: {fileID: 1060710768}
   dicas: {fileID: 669250665}

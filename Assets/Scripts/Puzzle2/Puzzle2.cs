@@ -22,7 +22,6 @@ public class Puzzle2 : MonoBehaviour
 
         if (other.CompareTag("Final"))
         {
-            Debug.Log("Ganhou");
             PlayerPrefs.SetInt("quadro_on", 1);
             SceneManager.LoadScene("Sala Principal");
         }

@@ -55,8 +55,8 @@ public class controlGame : MonoBehaviour
                 textTempo.text = "Você foi pego!";
             }            
             PlayerPrefs.SetInt("zerado", 0);
-            Camera.GetComponent<JoystickDynamicSala>().enabled = false;
-            this.GetComponent<JoystickPlayer>().enabled = false;
+            //Camera.GetComponent<JoystickDynamicSala>().enabled = false;
+            //this.GetComponent<JoystickPlayer>().enabled = false;
             pause.GetComponent<Button>().enabled = false;
             dicas.GetComponent<Button>().enabled = false;
             GetComponent<AudioSource>().enabled = true;
@@ -69,9 +69,9 @@ public class controlGame : MonoBehaviour
         if (tela_cofre.activeSelf==false) {
             Time.timeScale = 0;
             panel.SetActive(true);
-            joystickMovimentacao.SetActive(false);
-            joystickCamera.SetActive(false);
-            Camera.GetComponent<JoystickDynamicSala>().enabled = false;
+            //joystickMovimentacao.SetActive(false);
+            //joystickCamera.SetActive(false);
+            //Camera.GetComponent<JoystickDynamicSala>().enabled = false;
         }
     }
 
@@ -79,9 +79,9 @@ public class controlGame : MonoBehaviour
     {
         Time.timeScale = 1;
         panel.SetActive(false);
-        joystickMovimentacao.SetActive(true);
-        joystickCamera.SetActive(true);
-        Camera.GetComponent<JoystickDynamicSala>().enabled = true;
+        //joystickMovimentacao.SetActive(true);
+        //joystickCamera.SetActive(true);
+        //Camera.GetComponent<JoystickDynamicSala>().enabled = true;
     }
     public void menuGame()
     {

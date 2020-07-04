@@ -51,7 +51,6 @@ public class CaixaDeEscrita : MonoBehaviour
         arg0 = arg0.Trim(); //apagando espaço em branco
         if (string.Equals(arg0, enigma))
         {
-            Debug.Log("Correto");
             PlayerPrefs.SetInt("livro_on", 1);
             SceneManager.LoadScene("Sala Principal");
         }
