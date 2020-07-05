@@ -29,7 +29,7 @@ public class puzzle4 : MonoBehaviour
             {
                 Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                 RaycastHit hit;
-                if (Physics.Raycast(ray, out hit) && posiPerson.x > 35 && posiPerson.z < 12 && posiPerson.z > -3)
+                if (Physics.Raycast(ray, out hit) && posiPerson.x > 30 && posiPerson.z < 15 && posiPerson.z > -6)
                 {
                     if (hit.transform.name == "vela_mesa1")
                     {

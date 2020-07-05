@@ -50,7 +50,7 @@ public class controlPlacar : MonoBehaviour
         WWWForm wwwf = new WWWForm();
         wwwf.AddField("jogo", "acartaroubada", System.Text.Encoding.UTF8);
         wwwf.AddField("acao", "listar", System.Text.Encoding.UTF8);
-        wwwf.AddField("ordem", "ASC", System.Text.Encoding.UTF8);
+        wwwf.AddField("ordem", "DESC", System.Text.Encoding.UTF8);
         wwwf.AddField("limite", "10", System.Text.Encoding.UTF8);
 
         using (var w = UnityWebRequest.Post("https://spigo.net/jogos/highscore.php?desc=listar", wwwf))
@@ -71,16 +71,19 @@ public class controlPlacar : MonoBehaviour
                 int somaPosicao = 1;
                 Players playerContainer = JsonUtility.FromJson<Players>(w.downloadHandler.text);
                 if (playerContainer.objetos.Length > 0)
-
+                {
                     foreach (Players.Player item in playerContainer.objetos)
                     {
                         listaJogadores.text += item.name + "\n";
                         int seconds = (int)(item.pontos % 60);
                         int minutes = (int)(item.pontos / 60) % 60;
-                        listaTempo.text += string.Format("{0:00}:{1:00}", minutes, seconds) + "\n";                        
+                        int seconds2 = 60 - seconds;
+                        int minutes2 = 15 - minutes;
+                        listaTempo.text += string.Format("{0:00}:{1:00}", minutes2, seconds2) + "\n";
                         listaPosicao.text += somaPosicao + "\n";
                         somaPosicao++;
                     }
+                }
             }
         }
     }
